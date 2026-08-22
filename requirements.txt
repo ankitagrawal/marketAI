@@ -1,0 +1,15 @@
+yfinance
+pandas
+matplotlib
+ipykernel
+python-dotenv
+openai
+snscrape
+tweepy
+requests
+ta
+pandas_ta
+nsetools
+streamlit
+
+openpyxl
