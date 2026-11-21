@@ -1,0 +1,1103 @@
+ETF                  Weekly RSI   Close        44 WMA       W>WMA    WMA Rise   W Slope%   44 DMA       D>DMA    DMA Rise   D Slope%   Dist%    Momentum   Early    Turn
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HDFCBANK.NS          35.58        726.95       845.76       No       No         -3.22      767.11       No       No         -0.95      -5.29    No         No       No
+INDIGO.NS            53.47        5110.0       4928.61      Yes      No         -1.39      5270.62      No       Yes        0.58       -2.97    No         No       No
+ICICIBANK.NS         61.63        1420.0       1338.94      Yes      No         0.41       1411.88      Yes      Yes        0.8        0.22     No         No       No
+M&M.NS               57.93        3412.2       3331.42      Yes      No         -0.57      3260.12      Yes      Yes        1.48       4.84     No         No       No
+SBIN.NS              53.62        1048.7       1017.94      Yes      Yes        2.78       1042.75      No       No         0.24       -0.88    No         No       No
+RELIANCE.NS          46.01        1316.0       1398.13      No       No         -0.69      1304.38      Yes      No         -0.09      0.06     No         No       No
+INFY.NS              43.54        1121.0       1309.34      No       No         -3.13      1100.89      Yes      No         0.37       2.54     No         No       No
+BHARTIARTL.NS        54.77        1946.0       1926.97      Yes      No         0.2        1912.48      Yes      Yes        0.55       1.25     No         No       No
+MARUTI.NS            48.18        13565.0      14320.57     No       No         -1.94      13764.06     No       No         0.3        -1.64    No         No       No
+LT.NS                55.41        4093.0       3946.0       Yes      Yes        0.94       3987.37      Yes      No         -0.41      2.48     No         No       No
+BAJFINANCE.NS        61.44        1095.0       973.76       Yes      Yes        1.04       1057.03      Yes      Yes        1.76       2.42     Yes        Yes      No
+HINDALCO.NS          57.55        1034.0       940.43       Yes      Yes        3.59       986.82       Yes      Yes        0.62       6.59     No         No       Yes
+OFSS.NS              67.91        11724.0      8612.73      Yes      Yes        4.92       11378.35     Yes      Yes        2.62       2.03     Yes        No       No
+MOTHERSON.NS         74.75        169.38       127.76       Yes      Yes        5.93       152.75       Yes      Yes        2.2        9.73     Yes        No       No
+AXISBANK.NS          45.96        1245.8       1282.0       No       Yes        0.96       1279.78      No       No         -1.25      -3.61    No         No       No
+BSE.NS               43.48        3241.0       3183.54      Yes      Yes        5.71       3618.63      No       No         -2.61      -8.21    No         No       No
+VEDL.NS              35.16        279.0        493.0        No       No         -4.95      270.62       Yes      No         -1.5       2.15     No         No       No
+TCS.NS               45.16        2302.0       2596.95      No       No         -2.87      2245.18      Yes      Yes        0.92       1.93     No         No       No
+ASHOKLEY.NS          55.54        173.0        166.23       Yes      Yes        2.6        164.05       Yes      Yes        1.45       4.81     No         Yes      No
+HSCL.NS              52.59        654.4        549.05       Yes      Yes        7.67       723.05       No       Yes        0.97       -6.91    No         No       No
+NATIONALUM.NS        58.38        393.45       346.69       Yes      Yes        6.46       359.89       Yes      Yes        0.85       12.16    No         No       Yes
+MSUMI.NS             43.94        38.36        41.69        No       No         -1.95      40.2         No       Yes        0.67       -6.13    No         No       No
+SHRIRAMFIN.NS        65.7         1130.0       963.28       Yes      Yes        6.64       1067.26      Yes      Yes        1.6        4.57     Yes        No       No
+BEL.NS               50.12        414.0        418.37       No       No         -0.02      406.13       Yes      No         -0.37      0.26     No         No       No
+AEGISLOG.NS          72.2         1417.9       838.35       Yes      Yes        9.88       1298.35      Yes      Yes        3.66       3.52     Yes        No       No
+KAYNES.NS            52.64        3890.0       4035.37      No       No         -10.7      3487.94      Yes      Yes        2.08       10.95    No         No       No
+MCX.NS               66.47        3185.0       2517.12      Yes      Yes        6.68       2827.95      Yes      Yes        1.18       15.25    No         No       Yes
+ONGC.NS              40.02        236.4        255.44       No       Yes        0.64       241.39       No       No         -0.45      -2.19    No         No       No
+TVSMOTOR.NS          68.85        4390.0       3654.13      Yes      Yes        2.54       3962.62      Yes      Yes        3.28       10.6     Yes        No       No
+CHOLAFIN.NS          61.38        1862.9       1667.99      Yes      Yes        2.09       1824.88      Yes      Yes        1.31       0.85     Yes        Yes      No
+NTPC.NS              40.13        340.0        355.78       No       No         0.38       346.73       No       No         -0.93      -2.32    No         No       No
+KOTAKBANK.NS         54.56        402.8        401.13       Yes      No         -0.77      390.04       Yes      No         -0.26      2.44     No         No       No
+HCLTECH.NS           51.99        1302.5       1370.13      No       No         -0.82      1241.4       Yes      Yes        2.05       6.19     No         No       No
+TATASTEEL.NS         43.2         183.0        188.22       No       Yes        1.29       187.21       No       No         -0.96      -1.21    No         No       No
+HEROMOTOCO.NS        63.73        5735.0       5295.31      Yes      No         0.39       5213.2       Yes      Yes        2.13       8.98     No         No       No
+BANDHANBNK.NS        46.85        175.1        170.61       Yes      Yes        1.3        186.77       No       No         -2.6       -5.73    No         No       No
+NETWEB.NS            69.75        5601.0       3816.36      Yes      Yes        3.98       4641.34      Yes      Yes        1.07       17.56    Yes        No       No
+MAXHEALTH.NS         43.53        1000.0       1051.63      No       No         -1.15      1081.68      No       No         -0.82      -8.37    No         No       No
+TATACHEM.NS          36.56        626.75       725.31       No       No         -4.5       685.87       No       No         -1.77      -8.77    No         No       No
+TMPV.NS              37.79        317.9        353.39       No       No         -10.67     337.46       No       No         -1.71      -6.91    No         No       No
+ASIANPAINT.NS        52.56        2640.0       2578.47      Yes      Yes        1.54       2698.16      No       No         -0.29      -2.39    No         No       No
+ETERNAL.NS           68.17        328.0        273.57       Yes      No         -1.37      296.53       Yes      Yes        3.0        10.39    No         No       No
+CANBK.NS             49.72        129.96       135.36       No       Yes        1.13       127.62       No       No         -0.46      -0.27    No         No       No
+ADANIENT.NS          62.28        2997.0       2470.25      Yes      Yes        2.94       3067.29      No       No         0.0        -2.74    No         No       No
+EICHERMOT.NS         64.06        8010.0       7233.24      Yes      Yes        1.78       7651.45      Yes      Yes        0.93       4.91     Yes        Yes      No
+DIXON.NS             67.41        14850.0      12316.16     Yes      No         -3.41      13649.02     Yes      Yes        2.1        6.57     No         No       No
+HFCL.NS              77.34        228.01       117.27       Yes      Yes        18.73      212.96       Yes      Yes        1.8        11.5     No         No       No
+MUTHOOTFIN.NS        44.99        3022.0       3372.45      No       No         -0.36      2993.0       Yes      No         -0.88      6.79     No         No       No
+IDEA.NS              60.77        13.94        11.56        Yes      Yes        6.27       13.65        Yes      No         -0.79      3.17     No         No       Yes
+SUZLON.NS            39.49        46.71        50.83        No       No         -1.77      51.44        No       No         -2.94      -9.16    No         No       No
+SYRMA.NS             67.33        1439.3       981.31       Yes      Yes        8.62       1408.85      Yes      Yes        1.34       3.08     No         No       No
+LODHA.NS             63.97        1242.0       1018.63      Yes      Yes        0.7        1161.67      Yes      Yes        3.85       7.65     Yes        No       No
+POWERGRID.NS         41.39        272.4        283.28       No       No         -0.09      280.32       No       No         -1.04      -4.0     No         No       No
+IRFC.NS              31.88        86.4         104.55       No       No         -4.4       88.77        No       No         -2.01      -3.12    No         No       No
+ULTRACEMCO.NS        50.85        11570.0      11544.52     Yes      No         -0.36      11590.36     No       No         0.48       -0.37    No         No       No
+TRENT.NS             46.84        2924.0       3125.28      No       No         -7.74      3019.76      No       No         -0.8       -3.97    No         No       No
+POWERINDIA.NS        58.23        34190.0      26577.04     Yes      Yes        7.98       33143.14     Yes      No         -0.72      2.3      No         No       No
+COFORGE.NS           70.61        1891.7       1512.44      Yes      No         0.15       1621.27      Yes      Yes        3.24       15.42    No         No       No
+NAUKRI.NS            71.09        1350.1       1153.25      Yes      No         -0.97      1199.32      Yes      Yes        4.26       11.73    No         No       No
+ADANIPOWER.NS        54.05        205.5        178.61       Yes      Yes        5.06       214.58       No       No         -1.51      -5.39    No         No       No
+HINDUNILVR.NS        34.13        2015.0       2235.34      No       No         -2.46      2116.44      No       No         -0.93      -4.77    No         No       No
+HINDZINC.NS          55.3         594.9        559.29       Yes      Yes        2.27       548.03       Yes      No         0.29       11.25    No         No       No
+POLYCAB.NS           53.8         8966.0       8165.91      Yes      Yes        2.81       9248.93      No       No         -1.12      -2.63    No         No       No
+PFC.NS               36.86        363.0        396.15       No       No         0.38       404.45       No       No         -1.96      -10.51   No         No       No
+FORCEMOT.NS          43.46        17770.0      19480.66     No       No         0.46       18154.82     No       No         -0.38      -2.95    No         No       No
+WIPRO.NS             40.37        180.79       209.27       No       No         -3.52      177.92       Yes      No         0.13       2.43     No         No       No
+TECHM.NS             58.21        1584.0       1468.63      Yes      Yes        1.82       1540.89      Yes      Yes        1.73       2.73     Yes        Yes      No
+ADANIGREEN.NS        51.86        1320.0       1154.37      Yes      Yes        4.32       1438.22      No       No         -1.81      -9.33    No         No       No
+BHEL.NS              62.79        413.0        321.04       Yes      Yes        8.25       408.46       Yes      Yes        0.66       0.6      No         Yes      No
+BAJAJ-AUTO.NS        73.21        11700.0      9709.65      Yes      Yes        3.75       10884.61     Yes      Yes        2.1        8.45     Yes        No       No
+SUNPHARMA.NS         57.24        1902.4       1776.51      Yes      Yes        2.48       1925.74      No       No         0.46       -0.67    No         No       No
+ADANIPORTS.NS        52.76        1700.0       1578.92      Yes      Yes        2.83       1761.8       No       No         -1.04      -4.82    No         No       No
+JINDALSTEL.NS        51.64        1127.8       1116.63      Yes      Yes        0.57       1071.33      Yes      No         -0.08      6.32     No         No       Yes
+TATACONSUM.NS        38.57        1049.0       1126.37      No       No         -0.51      1092.1       No       No         -0.69      -3.43    No         No       No
+OLAELEC.NS           48.62        37.73        37.13        Yes      No         -5.7       39.94        No       No         -1.58      -6.02    No         No       No
+ITC.NS               32.62        269.4        316.7        No       No         -4.5       282.09       No       No         -1.02      -5.07    No         No       No
+AUROPHARMA.NS        67.0         1621.3       1342.49      Yes      Yes        5.2        1584.3       Yes      Yes        1.41       2.69     Yes        No       No
+APOLLOHOSP.NS        61.69        8693.0       7824.9       Yes      Yes        2.07       8805.26      No       No         0.48       -1.78    No         No       No
+HONASA.NS            71.28        481.9        344.25       Yes      Yes        7.67       462.8        Yes      Yes        2.13       5.51     Yes        No       No
+SWIGGY.NS            49.5         282.5        312.04       No       No         -6.33      269.08       Yes      Yes        1.17       5.47     No         No       No
+TITAN.NS             72.23        5086.1       4226.51      Yes      Yes        4.68       4745.65      Yes      Yes        2.09       6.62     Yes        No       No
+M&MFIN.NS            61.55        381.6        333.14       Yes      Yes        4.16       358.23       Yes      Yes        3.79       5.87     Yes        No       No
+HAL.NS               66.64        5000.0       4353.18      Yes      No         -0.03      4629.56      Yes      Yes        1.78       5.47     No         No       No
+DATAPATTNS.NS        65.57        4829.9       3462.31      Yes      Yes        7.0        4455.66      Yes      No         -0.11      5.76     No         No       Yes
+INDUSTOWER.NS        43.68        375.75       401.44       No       Yes        1.38       378.4        No       No         -0.77      -0.53    No         No       No
+TATACAP.NS           57.25        365.05       335.71       Yes      No         0.0        359.22       Yes      Yes        0.58       1.6      No         No       No
+KEI.NS               61.04        5527.6       4679.63      Yes      Yes        3.42       5280.75      Yes      No         0.21       3.68     No         No       No
+COALINDIA.NS         41.38        405.2        418.4        No       Yes        1.5        418.88       No       No         -1.28      -3.11    No         No       No
+CGPOWER.NS           54.61        867.0        764.33       Yes      Yes        2.19       897.05       No       No         -1.17      -3.04    No         No       No
+KIRLOSENG.NS         59.13        2100.8       1558.4       Yes      Yes        12.38      2247.69      No       No         -0.11      -7.5     No         No       No
+BANKBARODA.NS        42.98        247.0        269.73       No       No         -0.03      250.88       No       No         -1.93      -4.1     No         No       No
+PAYTM.NS             74.43        1632.0       1220.16      Yes      Yes        2.75       1367.5       Yes      Yes        5.2        18.19    Yes        No       No
+BPCL.NS              48.31        311.0        327.59       No       No         0.02       313.51       No       No         -0.03      -0.47    No         No       No
+IFCI.NS              61.86        80.91        62.26        Yes      Yes        4.33       75.6         Yes      No         -0.74      9.13     No         No       Yes
+ZEEL.NS              54.79        107.58       94.08        Yes      No         -1.07      103.75       Yes      No         -0.96      0.93     No         No       No
+BHARATFORG.NS        57.59        2063.0       1747.95      Yes      Yes        7.86       2136.94      No       No         0.11       -4.41    No         No       No
+NESTLEIND.NS         60.66        1477.1       1330.36      Yes      Yes        3.06       1464.32      No       Yes        0.67       -0.2     Yes        No       No
+PAGEIND.NS           42.21        35480.0      36513.09     No       No         -1.16      39530.11     No       No         -1.21      -10.07   No         No       No
+LICI.NS              53.14        422.25       411.71       Yes      No         -0.52      422.29       Yes      No         -0.13      0.32     No         No       No
+CUMMINSIND.NS        47.87        5107.5       4854.88      Yes      Yes        4.33       5462.63      No       No         -1.23      -5.55    No         No       No
+JSWINFRA.NS          63.33        335.7        282.31       Yes      Yes        0.81       331.43       Yes      Yes        1.19       2.84     Yes        Yes      Yes
+WELCORP.NS           93.19        2311.9       1110.43      Yes      Yes        13.17      1700.38      Yes      Yes        5.78       40.13    Yes        No       No
+OIL.NS               55.48        475.0        448.96       Yes      Yes        1.71       444.82       Yes      Yes        1.81       7.14     No         No       Yes
+BOSCHLTD.NS          74.95        48200.0      37304.74     Yes      Yes        1.79       42632.23     Yes      Yes        2.83       12.58    Yes        No       No
+APARINDS.NS          72.06        16856.0      11306.08     Yes      Yes        8.96       15147.8      Yes      Yes        0.53       10.52    No         No       No
+SAMMAANCAP.NS        44.64        150.52       156.48       No       Yes        0.61       163.08       No       No         -2.01      -7.31    No         No       No
+LTF.NS               59.0         317.15       288.54       Yes      Yes        2.98       313.3        Yes      Yes        1.24       1.49     Yes        Yes      Yes
+TATAPOWER.NS         43.27        374.3        387.82       No       No         -0.38      379.45       No       No         -0.82      -1.79    No         No       No
+GMRAIRPORT.NS        46.98        99.63        99.79        No       Yes        2.18       107.9        No       No         -0.99      -8.36    No         No       No
+GRASIM.NS            65.93        3308.0       2890.38      Yes      Yes        1.87       3177.8       Yes      Yes        0.61       3.38     Yes        No       No
+UNITDSPR.NS          70.19        1556.0       1362.51      Yes      Yes        1.81       1452.05      Yes      Yes        2.14       6.44     Yes        No       No
+TEJASNET.NS          49.72        510.45       472.25       Yes      No         -2.18      542.9        No       No         -2.37      -5.54    No         No       No
+DLF.NS               58.94        678.1        633.37       Yes      No         -1.74      652.17       Yes      Yes        1.18       5.11     No         No       No
+INDHOTEL.NS          57.89        730.0        686.98       Yes      No         -0.21      730.21       No       No         0.26       -0.82    No         No       No
+MANAPPURAM.NS        62.44        357.5        299.36       Yes      Yes        3.32       344.05       Yes      Yes        1.28       6.45     Yes        No       Yes
+CARTRADE.NS          70.27        3072.9       2380.39      Yes      Yes        1.97       2789.3       Yes      Yes        1.74       10.91    Yes        No       Yes
+HINDPETRO.NS         45.84        363.25       392.87       No       No         -1.17      374.8        No       No         -0.42      -1.04    No         No       No
+AUBANK.NS            63.75        1108.2       983.69       Yes      Yes        4.53       1051.69      Yes      Yes        0.78       5.29     No         No       No
+RRKABEL.NS           79.47        2919.3       1754.4       Yes      Yes        12.19      2540.35      Yes      Yes        3.14       14.41    Yes        No       No
+RECLTD.NS            42.0         326.65       345.47       No       No         -0.26      352.21       No       No         -0.84      -7.68    No         No       No
+MAZDOCK.NS           53.69        2552.0       2480.69      Yes      No         -2.27      2446.97      Yes      No         0.26       3.81     No         No       No
+DRREDDY.NS           41.97        1174.7       1249.29      No       No         -1.0       1227.82      No       No         -1.01      -3.53    No         No       No
+SBICARD.NS           46.42        649.0        728.55       No       No         -4.33      632.93       Yes      No         0.35       2.02     No         No       No
+PIDILITIND.NS        65.76        1649.0       1472.06      Yes      Yes        1.13       1614.2       Yes      Yes        0.8        1.83     Yes        No       No
+EXIDEIND.NS          66.74        459.6        368.38       Yes      Yes        2.17       439.07       Yes      Yes        2.58       3.42     Yes        No       No
+HDFCAMC.NS           50.63        2610.0       2583.98      Yes      No         -1.11      2612.9       Yes      No         -0.64      0.02     No         No       No
+UNIONBANK.NS         61.51        183.45       165.29       Yes      Yes        3.8        173.56       Yes      Yes        1.25       5.33     Yes        No       No
+YESBANK.NS           52.95        22.8         21.9         Yes      Yes        0.67       23.38        No       No         -1.27      -3.58    No         No       No
+GODREJPROP.NS        57.03        2035.0       1875.31      Yes      No         -0.11      2032.66      Yes      Yes        1.62       0.32     No         No       No
+VBL.NS               37.47        430.1        469.44       No       No         -0.29      462.57       No       No         -2.69      -8.19    No         No       No
+JSWSTEEL.NS          59.84        1293.7       1207.47      Yes      Yes        1.54       1258.17      Yes      No         0.2        3.99     No         No       No
+JIOFIN.NS            46.76        244.0        260.34       No       No         -3.02      243.81       No       No         0.18       -0.37    No         No       No
+IOC.NS               43.17        135.9        149.45       No       No         -0.22      139.53       No       No         -0.61      -1.09    No         No       No
+SONACOMS.NS          78.27        817.6        564.45       Yes      Yes        8.99       726.84       Yes      Yes        4.09       11.26    Yes        No       No
+FEDERALBNK.NS        76.35        361.0        288.66       Yes      Yes        7.93       344.44       Yes      Yes        1.47       3.5      No         No       No
+LAURUSLABS.NS        80.07        1802.0       1209.5       Yes      Yes        10.57      1663.48      Yes      Yes        3.4        8.26     Yes        No       No
+AMBER.NS             48.73        7350.0       7273.94      Yes      No         -1.42      7470.32      No       No         -1.02      -1.42    No         No       No
+BAJAJFINSV.NS        61.08        2032.5       1913.57      Yes      No         -0.5       1927.47      Yes      Yes        1.74       3.82     No         No       No
+SAIL.NS              53.19        173.46       160.21       Yes      Yes        3.19       169.13       Yes      No         -0.3       6.24     No         No       Yes
+RVNL.NS              34.21        225.3        285.51       No       No         -5.2       228.8        No       No         -1.07      -3.12    No         No       No
+NMDC.NS              51.06        84.61        81.63        Yes      Yes        1.76       84.65        Yes      No         -0.51      1.41     No         Yes      Yes
+RBLBANK.NS           65.46        392.5        329.85       Yes      Yes        4.17       373.8        Yes      Yes        0.53       3.57     No         No       No
+PNB.NS               59.23        116.55       112.8        Yes      No         0.48       110.68       Yes      Yes        1.02       4.55     No         No       No
+ANANDRATHI.NS        75.58        2188.0       1698.92      Yes      Yes        5.3        2078.63      Yes      Yes        2.26       4.37     Yes        No       No
+SUPREMEIND.NS        54.29        3642.0       3570.3       Yes      No         -2.83      3423.77      Yes      No         0.4        5.6      No         No       No
+PERSISTENT.NS        59.31        5667.5       5449.67      Yes      No         0.33       5180.04      Yes      Yes        1.83       9.16     No         No       No
+ADANIENSOL.NS        59.54        1541.9       1210.14      Yes      Yes        9.23       1620.14      No       No         0.47       -3.95    No         No       No
+NYKAA.NS             71.73        334.0        272.67       Yes      Yes        4.32       324.02       Yes      Yes        1.48       1.68     Yes        No       Yes
+SOLARINDS.NS         70.74        19900.0      15171.91     Yes      Yes        4.55       18660.8      Yes      Yes        1.56       5.73     Yes        No       No
+SIEMENS.NS           62.54        3920.0       3381.5       Yes      Yes        2.7        3721.39      Yes      Yes        0.9        9.3      Yes        No       No
+HINDCOPPER.NS        63.59        572.7        493.94       Yes      Yes        5.86       509.46       Yes      Yes        1.56       12.94    Yes        No       No
+ATHERENERG.NS        75.99        1462.0       874.29       Yes      Yes        13.78      1288.51      Yes      Yes        5.3        12.46    Yes        No       No
+CDSL.NS              55.64        1388.9       1352.56      Yes      No         -1.77      1347.5       Yes      No         0.37       2.75     No         No       No
+CIPLA.NS             54.48        1432.2       1393.02      Yes      No         -0.92      1444.83      No       No         0.47       -1.41    No         No       No
+UNOMINDA.NS          60.52        1265.0       1169.75      Yes      No         -0.68      1182.19      Yes      Yes        1.89       5.72     No         No       No
+EMCURE.NS            59.76        1863.0       1598.9       Yes      Yes        4.94       1884.81      No       Yes        0.78       -1.34    No         No       No
+HBLENGINE.NS         43.57        702.55       790.78       No       No         -2.61      739.11       No       No         -2.2       -6.45    No         No       No
+GAIL.NS              53.57        172.0        165.35       Yes      No         0.12       173.67       No       No         -0.23      -0.77    No         No       No
+INDIANB.NS           54.38        876.9        848.05       Yes      Yes        2.24       843.26       Yes      No         0.18       3.29     No         No       No
+GRSE.NS              49.54        2601.5       2567.09      Yes      No         -0.12      2633.06      No       No         -0.88      -1.29    No         No       No
+WOCKPHARMA.NS        58.02        1886.3       1532.98      Yes      Yes        4.6        1907.84      No       No         -0.92      -1.04    No         No       No
+BDL.NS               51.88        1359.0       1362.97      No       No         -2.44      1317.08      Yes      No         0.2        2.45     No         No       No
+SBILIFE.NS           45.29        1792.9       1912.36      No       No         0.14       1824.35      No       No         -0.08      -2.69    No         No       No
+ABB.NS               60.18        7424.0       6146.71      Yes      Yes        5.31       7257.94      Yes      Yes        0.78       3.47     No         Yes      No
+WAAREEENER.NS        40.73        2678.2       2986.64      No       No         -3.21      2775.61      No       No         -1.86      -4.13    No         No       No
+DMART.NS             44.86        3906.0       4028.35      No       No         -1.77      4036.17      No       No         -1.16      -2.93    No         No       No
+ABCAPITAL.NS         68.04        413.0        354.64       Yes      Yes        4.46       402.47       Yes      Yes        0.93       2.44     Yes        No       Yes
+MARICO.NS            61.45        849.25       779.02       Yes      Yes        2.53       850.95       No       Yes        0.63       -0.47    No         No       No
+PNBHOUSING.NS        69.17        1170.3       947.35       Yes      Yes        3.87       1094.58      Yes      Yes        2.05       6.31     Yes        No       No
+DIVISLAB.NS          84.43        8597.0       6616.53      Yes      Yes        3.98       7579.71      Yes      Yes        3.43       12.22    Yes        No       No
+TIINDIA.NS           51.11        2885.8       2776.43      Yes      No         -1.85      2888.89      No       No         -1.76      -0.72    No         No       No
+ASTRAL.NS            52.62        1528.5       1506.62      Yes      No         0.45       1434.37      Yes      No         -0.17      6.74     No         No       No
+AADHARHFC.NS         42.79        462.55       485.89       No       No         -0.52      508.56       No       No         -0.5       -8.26    No         No       No
+IIFL.NS              76.02        679.8        526.98       Yes      Yes        4.08       577.1        Yes      Yes        2.86       20.99    Yes        No       No
+HYUNDAI.NS           63.8         2218.8       2081.27      Yes      No         -2.59      2047.53      Yes      Yes        1.65       8.01     No         No       No
+VMM.NS               33.38        103.43       121.75       No       No         -4.47      111.81       Yes      No         -1.55      1.07     No         No       No
+OBEROIRLTY.NS        61.58        1886.0       1666.28      Yes      Yes        1.86       1844.34      Yes      Yes        1.45       1.72     Yes        Yes      Yes
+SCI.NS               52.96        290.55       263.37       Yes      Yes        3.88       291.65       No       No         -1.05      -1.03    No         No       No
+KPRMILL.NS           61.83        1151.6       982.75       Yes      Yes        0.68       1113.01      Yes      No         0.2        0.81     No         No       Yes
+GESHIP.NS            47.31        1311.3       1287.75      Yes      Yes        3.73       1374.37      No       No         -1.14      -3.64    No         No       No
+ZENTEC.NS            61.41        1926.3       1530.06      Yes      Yes        2.74       1786.83      Yes      No         -0.04      6.67     No         No       Yes
+IDBI.NS              47.9         82.24        89.8         No       No         -1.24      84.19        Yes      No         -0.31      6.13     No         No       No
+COLPAL.NS            38.19        1889.0       2068.63      No       No         -1.35      2027.63      No       No         -0.77      -7.35    No         No       No
+INDUSINDBK.NS        60.39        1005.6       897.64       Yes      Yes        4.31       1001.48      Yes      Yes        1.16       1.31     Yes        Yes      No
+AMBUJACEM.NS         37.97        414.5        477.29       No       No         -3.84      428.13       No       No         -0.43      -4.7     No         No       No
+RADICO.NS            86.34        4639.8       3332.2       Yes      Yes        6.15       4254.29      Yes      Yes        3.31       8.28     Yes        No       No
+POLICYBZR.NS         61.44        1795.2       1649.28      Yes      No         -0.72      1633.12      Yes      Yes        1.19       8.89     No         No       No
+CAMS.NS              49.49        753.0        739.32       Yes      No         0.11       776.57       No       No         -0.86      -2.86    No         No       No
+PIIND.NS             33.34        2496.8       3024.16      No       No         -4.12      2634.89      No       No         -1.64      -6.21    No         No       No
+OLECTRA.NS           51.73        1318.4       1232.48      Yes      No         -2.34      1384.61      No       No         -1.21      -5.18    No         No       No
+DELHIVERY.NS         48.06        450.7        443.15       Yes      No         0.31       479.48       No       No         -0.38      -7.49    No         No       No
+GLAND.NS             71.67        2819.3       1967.71      Yes      Yes        4.74       2553.59      Yes      Yes        3.58       9.54     Yes        No       No
+REDINGTON.NS         68.59        350.55       257.55       Yes      Yes        2.56       302.46       Yes      Yes        3.84       21.11    Yes        No       No
+ZYDUSLIFE.NS         62.45        1120.0       978.9        Yes      Yes        1.72       1128.37      No       No         0.41       -2.26    No         No       No
+ENRIN.NS             53.98        3435.6       3078.2       Yes      No         0.34       3438.73      Yes      No         -1.06      1.69     No         No       No
+PHOENIXLTD.NS        56.0         1930.0       1784.61      Yes      Yes        2.77       1986.78      No       No         0.42       -3.34    No         No       No
+ATGL.NS              48.89        646.1        613.57       Yes      Yes        0.67       684.79       No       No         -1.35      -5.96    No         No       No
+JSWENERGY.NS         50.98        544.95       518.77       Yes      No         0.48       556.96       No       No         -0.61      -2.12    No         No       No
+APLAPOLLO.NS         64.68        2139.0       1922.34      Yes      Yes        1.62       1897.01      Yes      Yes        1.97       12.81    No         No       No
+COCHINSHIP.NS        48.56        1480.5       1535.4       No       No         -3.13      1449.75      Yes      No         0.13       3.75     No         No       No
+THERMAX.NS           46.21        3967.8       3661.02      Yes      Yes        4.04       4444.35      No       No         -2.1       -10.12   No         No       No
+KALYANKJIL.NS        70.8         603.55       450.28       Yes      Yes        3.35       530.58       Yes      Yes        6.05       14.53    Yes        No       No
+ANGELONE.NS          46.33        287.8        279.36       Yes      Yes        3.92       314.28       No       No         -2.5       -8.68    No         No       No
+NHPC.NS              45.84        76.15        77.65        No       No         -1.12      78.54        No       No         0.07       -2.99    No         No       No
+PRESTIGE.NS          57.84        1631.0       1513.09      Yes      No         0.27       1626.76      No       Yes        0.74       -0.19    No         No       No
+MOTILALOFS.NS        62.25        990.0        850.53       Yes      No         -0.42      926.57       Yes      No         0.31       7.96     No         No       No
+HAVELLS.NS           51.29        1268.0       1306.73      No       No         -2.62      1230.07      Yes      Yes        1.1        2.45     No         No       No
+POONAWALLA.NS        60.87        490.05       442.98       Yes      No         -0.69      471.26       Yes      Yes        2.26       0.83     No         No       No
+IDFCFIRSTB.NS        69.59        86.75        76.99        Yes      Yes        2.29       82.35        Yes      Yes        1.22       4.01     Yes        No       No
+SRF.NS               42.87        2571.9       2740.32      No       No         -1.49      2694.4       No       No         -0.62      -4.32    No         No       No
+PATANJALI.NS         23.06        348.0        475.5        No       No         -6.42      368.94       No       No         -2.47      -5.53    No         No       No
+NBCC.NS              40.63        88.88        100.2        No       No         -2.18      96.33        No       No         -3.0       -8.11    No         No       No
+MFSL.NS              49.22        1585.0       1634.77      No       No         -0.35      1559.32      Yes      No         -0.78      0.93     No         No       No
+MAHABANK.NS          55.91        80.26        69.94        Yes      Yes        5.21       82.25        No       No         -1.44      -1.86    No         No       No
+CHOICEIN.NS          58.04        808.6        750.49       Yes      No         0.16       800.13       No       Yes        1.55       -0.07    No         No       No
+LICHSGFIN.NS         40.17        497.0        524.93       No       No         -1.33      521.22       No       No         -1.21      -6.47    No         No       No
+FORTIS.NS            45.91        907.1        918.46       No       No         -0.83      944.64       No       No         -0.74      -3.61    No         No       No
+BRITANNIA.NS         47.48        5365.0       5588.43      No       No         -1.26      5360.0       No       Yes        0.79       -1.18    No         No       No
+MANKIND.NS           51.12        2384.0       2272.83      Yes      No         -0.38      2486.13      No       No         -0.28      -4.63    No         No       No
+BANKINDIA.NS         50.83        142.79       143.8        No       Yes        2.41       142.26       No       No         -0.37      -0.7     No         No       No
+BELRISE.NS           57.07        231.77       197.16       Yes      Yes        6.12       237.24       No       No         -0.43      -3.37    No         No       No
+BIOCON.NS            54.49        415.55       393.26       Yes      Yes        2.5        423.34       No       No         -0.1       -2.94    No         No       No
+GODREJCP.NS          33.96        933.0        1088.09      No       No         -1.71      1029.78      No       No         -1.04      -10.22   No         No       No
+BLUEJET.NS           59.42        596.15       494.13       Yes      No         -2.17      580.45       Yes      Yes        2.0        2.07     No         No       No
+UPL.NS               39.11        569.0        662.5        No       No         -1.67      586.51       No       No         -0.83      -3.67    No         No       No
+PREMIERENE.NS        55.77        1053.0       940.02       Yes      No         -0.04      1045.09      No       No         -0.44      -1.63    No         No       No
+TATACOMM.NS          42.74        1655.4       1714.66      No       No         0.33       1811.58      No       No         -2.08      -6.73    No         No       No
+TORNTPHARM.NS        62.84        4896.5       4216.23      Yes      Yes        4.68       4883.96      No       Yes        1.37       -0.13    Yes        No       No
+LTM.NS               52.06        4487.8       4837.77      No       No         -2.37      4211.01      Yes      Yes        2.18       7.07     No         No       No
+HDFCLIFE.NS          38.49        554.8        651.78       No       No         -4.22      556.53       No       No         -1.06      -0.9     No         No       No
+NUVAMA.NS            56.17        1743.6       1474.3       Yes      Yes        4.61       1802.55      No       No         0.15       -3.58    No         No       No
+PPLPHARMA.NS         71.29        213.67       171.95       Yes      No         -0.04      189.17       Yes      Yes        3.64       11.51    No         No       No
+PETRONET.NS          58.99        293.0        276.13       Yes      Yes        0.72       279.88       Yes      No         0.03       4.96     No         No       Yes
+PCBL.NS              56.08        317.55       296.49       Yes      No         -2.58      317.89       Yes      Yes        0.72       0.95     No         No       No
+AWL.NS               43.06        188.12       208.85       No       No         -4.39      189.13       Yes      No         0.09       2.81     No         No       No
+GRAPHITE.NS          57.63        710.75       637.57       Yes      Yes        3.01       658.83       Yes      Yes        1.76       9.2      Yes        No       No
+TATAELXSI.NS         36.63        3708.0       4509.34      No       No         -4.95      3691.66      No       No         -1.49      -0.09    No         No       No
+CROMPTON.NS          45.94        252.0        257.54       No       No         -2.21      257.67       No       No         -1.19      -4.88    No         No       No
+MPHASIS.NS           53.99        2430.0       2423.79      Yes      No         -1.7       2351.37      Yes      Yes        1.19       3.28     No         No       No
+SHREECEM.NS          41.69        24280.0      25709.2      No       No         -1.85      26022.27     No       No         -0.32      -7.43    No         No       No
+TARIL.NS             44.65        298.65       307.79       No       No         -8.04      315.31       No       No         -1.81      -3.54    No         No       No
+JKTYRE.NS            42.29        374.7        434.12       No       Yes        0.6        395.4        No       No         -0.58      -3.07    No         No       No
+NAVINFLUOR.NS        74.48        8206.5       6585.46      Yes      Yes        6.95       7812.94      Yes      Yes        1.42       4.81     Yes        No       No
+KPITTECH.NS          34.16        589.3        858.07       No       No         -8.67      597.39       No       No         -3.35      -2.07    No         No       No
+TITAGARH.NS          53.65        843.55       796.03       Yes      No         -1.1       850.29       No       No         -1.23      -0.45    No         No       No
+VOLTAS.NS            42.29        1235.0       1356.93      No       No         -0.83      1299.75      No       No         -1.09      -4.74    No         No       No
+ALKEM.NS             47.63        5400.0       5500.19      No       No         0.3        5558.08      No       No         0.09       -3.81    No         No       No
+NLCINDIA.NS          40.23        269.8        279.9        No       Yes        1.15       297.38       No       No         -2.13      -7.49    No         No       No
+APOLLOTYRE.NS        52.41        439.7        451.54       No       No         -1.21      434.65       Yes      No         0.42       2.77     No         No       No
+NIACL.NS             59.35        184.13       161.18       Yes      No         -1.13      178.77       Yes      No         -0.02      3.04     No         No       No
+CUB.NS               58.11        217.3        199.7        Yes      Yes        4.01       215.52       No       Yes        1.29       -1.71    Yes        No       No
+360ONE.NS            60.72        1199.0       1103.61      Yes      Yes        1.06       1133.21      Yes      Yes        0.63       6.32     Yes        No       No
+DABUR.NS             35.32        400.5        462.42       No       No         -2.52      421.36       No       No         -0.63      -5.75    No         No       No
+ICICIGI.NS           39.84        1617.0       1829.75      No       No         -1.91      1692.8       No       No         -1.64      -4.06    No         No       No
+GLENMARK.NS          59.74        2317.9       2116.06      Yes      Yes        1.77       2248.91      Yes      Yes        0.89       5.47     Yes        No       No
+LUPIN.NS             42.81        2201.8       2223.25      No       Yes        2.33       2375.96      No       No         -0.5       -7.97    No         No       No
+VIJAYA.NS            71.02        1504.4       1124.3       Yes      Yes        4.71       1387.64      Yes      Yes        1.82       6.68     Yes        No       No
+HDBFS.NS             50.17        695.85       699.87       No       No         -1.14      711.31       No       No         -0.44      -3.53    No         No       No
+CGCL.NS              57.68        224.03       194.62       Yes      Yes        3.31       235.11       No       No         0.4        -4.37    No         No       No
+NATCOPHARM.NS        42.08        882.4        937.54       No       Yes        1.08       926.43       No       No         0.14       -4.47    No         No       No
+JYOTICNC.NS          67.63        988.8        820.6        Yes      No         -1.49      818.23       Yes      Yes        3.86       19.48    No         No       No
+IGL.NS               37.34        147.87       170.13       No       No         -4.28      154.07       No       No         -1.69      -4.0     No         No       No
+ENGINERSIN.NS        57.58        244.91       214.21       Yes      Yes        2.23       236.4        Yes      No         -0.41      6.46     No         No       Yes
+EMAMILTD.NS          42.17        402.6        454.45       No       No         -4.24      407.86       No       No         -0.01      -0.7     No         No       No
+ACUTAAS.NS           57.15        3169.0       2418.98      Yes      Yes        11.44      3374.07      No       No         0.32       -5.53    No         No       No
+SAILIFE.NS           80.59        1457.4       1042.94      Yes      Yes        6.58       1317.79      Yes      Yes        2.44       8.91     Yes        No       No
+LGEINDIA.NS          53.07        1623.3       1547.85      Yes      No         0.0        1570.88      Yes      No         0.41       6.13     No         No       No
+IREDA.NS             36.54        115.0        129.37       No       No         -3.28      121.49       No       No         -1.38      -5.26    No         No       No
+TRITURBINE.NS        46.66        574.85       556.16       Yes      Yes        2.06       621.93       No       No         -2.35      -7.19    No         No       No
+KFINTECH.NS          57.56        980.0        953.77       Yes      No         -2.25      908.21       Yes      Yes        1.22       6.52     No         No       No
+ZFCVINDIA.NS         60.06        2662.0       2403.93      Yes      Yes        1.84       2485.01      Yes      No         0.34       6.9      No         No       No
+NAM-INDIA.NS         67.38        1251.0       976.07       Yes      Yes        4.82       1181.32      Yes      Yes        0.77       6.28     No         No       Yes
+ACMESOLAR.NS         70.7         401.6        283.84       Yes      Yes        4.44       375.16       Yes      Yes        1.71       7.46     Yes        No       Yes
+LEMONTREE.NS         39.36        108.33       127.11       No       No         -6.03      113.08       No       No         -0.58      -3.77    No         No       No
+INDIACEM.NS          42.79        370.9        402.69       No       No         0.08       386.59       No       No         -0.38      -4.81    No         No       No
+CONCOR.NS            54.58        515.05       493.72       Yes      No         -0.7       496.02       Yes      Yes        1.37       4.4      No         No       No
+DALBHARAT.NS         52.68        1880.0       1921.47      No       No         -3.11      1805.89      Yes      Yes        1.22       3.51     No         No       No
+GODFRYPHLP.NS        45.32        2117.0       2304.05      No       No         -6.6       2133.75      No       No         -0.73      -1.46    No         No       No
+JPPOWER.NS           47.11        17.1         17.37        No       No         -0.72      17.48        No       No         -0.71      -2.21    No         No       No
+JWL.NS               39.63        247.0        282.24       No       No         -3.74      256.37       No       No         -1.51      -3.32    No         No       No
+PGEL.NS              55.11        600.55       557.21       Yes      Yes        1.2        591.34       Yes      Yes        1.11       1.18     Yes        Yes      No
+ENDURANCE.NS         67.16        3029.5       2581.88      Yes      No         -0.14      2786.11      Yes      Yes        1.89       7.79     No         No       No
+NEULANDLAB.NS        77.42        23301.0      16130.23     Yes      Yes        4.78       20078.65     Yes      Yes        4.33       14.24    Yes        No       No
+MRF.NS               48.87        132665.0     138841.0     No       No         -1.82      132384.78    Yes      No         0.4        1.51     No         No       No
+JSWCEMENT.NS         48.65        126.04       124.6        Yes      No         -1.02      133.55       No       No         -0.31      -4.67    No         No       No
+HOMEFIRST.NS         55.48        1193.7       1121.61      Yes      No         -0.48      1196.86      No       No         0.48       -1.21    No         No       No
+KAJARIACER.NS        57.84        1208.5       1080.14      Yes      No         0.05       1215.01      No       Yes        0.62       -1.0     No         No       No
+RPOWER.NS            38.13        23.45        29.38        No       No         -9.49      24.14        No       No         -2.16      -4.51    No         No       No
+LLOYDSME.NS          59.61        1865.9       1497.25      Yes      Yes        6.28       1894.41      No       Yes        0.97       -3.14    No         No       No
+GABRIEL.NS           67.26        1420.6       1084.78      Yes      Yes        2.12       1373.69      Yes      Yes        2.61       0.16     Yes        No       No
+ANANTRAJ.NS          60.75        625.0        545.11       Yes      No         -0.87      589.08       Yes      Yes        2.33       4.62     No         No       No
+COHANCE.NS           52.49        463.0        450.52       Yes      No         -12.36     443.6        Yes      Yes        1.02       1.74     No         No       No
+HUDCO.NS             42.2         186.09       201.06       No       No         -1.72      198.29       No       No         -1.41      -5.67    No         No       No
+INOXWIND.NS          28.99        73.6         102.57       No       No         -8.46      79.9         No       No         -2.7       -8.14    No         No       No
+JINDALSAW.NS         67.71        291.65       207.48       Yes      Yes        4.5        264.97       Yes      Yes        0.98       8.92     Yes        No       No
+JAINREC.NS           38.12        295.85       395.29       No       No         0.0        329.69       No       No         -3.16      -10.75   No         No       No
+IEX.NS               47.31        123.7        127.37       No       No         -1.26      124.77       No       No         -0.03      -1.14    No         No       No
+RAMCOCEM.NS          41.99        899.05       988.05       No       No         -1.4       921.71       No       No         0.35       -2.32    No         No       No
+BSOFT.NS             42.98        303.75       359.18       No       No         -1.95      297.46       Yes      No         -0.46      1.31     No         No       No
+NH.NS                45.82        1815.8       1842.24      No       Yes        1.3        1945.41      No       No         -0.42      -4.14    No         No       No
+MINDACORP.NS         71.38        727.85       592.67       Yes      Yes        3.38       700.83       Yes      Yes        1.57       2.96     Yes        No       No
+JUBLFOOD.NS          60.11        506.75       496.3        Yes      No         -4.0       450.73       Yes      Yes        2.56       12.8     No         No       No
+J&KBANK.NS           52.02        149.01       127.02       Yes      Yes        6.71       163.92       No       No         -1.13      -10.16   No         No       No
+BRIGADE.NS           61.36        639.3        583.44       Yes      No         -2.7       559.99       Yes      Yes        1.8        17.0     No         No       No
+TATAINVEST.NS        46.26        647.95       679.71       No       No         -3.54      666.7        No       No         -0.69      -3.15    No         No       No
+TATATECH.NS          64.02        820.75       658.26       Yes      Yes        2.26       764.04       Yes      Yes        1.23       4.91     Yes        Yes      No
+CPPLUS.NS            66.52        3475.5       2244.2       Yes      Yes        15.18      3562.16      No       No         -0.46      -4.27    No         No       No
+CEATLTD.NS           51.39        3563.4       3612.55      No       No         0.36       3592.47      No       Yes        0.52       -0.54    No         No       No
+SUNDARMFIN.NS        48.12        4534.5       4750.94      No       No         0.25       4545.07      No       No         0.22       -0.94    No         No       No
+CHENNPETRO.NS        75.42        1393.5       978.0        Yes      Yes        8.02       1202.68      Yes      Yes        3.76       18.02    Yes        No       No
+ESCORTS.NS           50.55        3086.6       3254.52      No       No         -2.23      3000.5       Yes      Yes        1.16       2.71     No         No       No
+SCHNEIDER.NS         51.7         1217.3       1007.84      Yes      Yes        6.8        1356.86      No       No         -0.92      -14.1    No         No       No
+ABREL.NS             51.06        1406.3       1434.38      No       No         -2.86      1400.14      Yes      Yes        1.09       2.58     No         No       No
+ICICIPRULI.NS        46.34        515.0        571.02       No       No         -2.08      502.54       Yes      No         0.04       1.28     No         No       No
+SHYAMMETL.NS         58.05        984.9        879.4        Yes      Yes        1.4        995.03       No       No         0.4        -0.53    No         No       No
+AARTIIND.NS          64.13        527.2        433.37       Yes      Yes        4.0        493.37       Yes      Yes        1.25       10.11    Yes        No       No
+LALPATHLAB.NS        70.58        1894.2       1525.11      Yes      Yes        2.3        1786.24      Yes      Yes        1.89       5.78     Yes        No       No
+GMDCLTD.NS           45.93        570.0        589.93       No       No         -0.25      580.93       No       No         -1.09      -1.71    No         No       No
+GRANULES.NS          66.7         858.15       669.56       Yes      Yes        6.68       847.12       Yes      Yes        1.35       1.44     Yes        No       Yes
+SAGILITY.NS          52.31        43.35        44.88        No       No         -0.68      42.06        Yes      Yes        1.0        3.69     No         No       No
+MRPL.NS              56.96        176.81       164.88       Yes      Yes        3.33       164.9        Yes      Yes        1.53       5.99     Yes        No       No
+WELSPUNLIV.NS        73.59        189.22       138.64       Yes      Yes        4.75       166.56       Yes      Yes        2.17       14.52    Yes        No       Yes
+SAREGAMA.NS          66.05        506.55       398.72       Yes      Yes        1.54       504.58       Yes      Yes        1.34       1.2      Yes        No       No
+STARHEALTH.NS        60.38        578.5        503.8        Yes      Yes        3.36       586.28       No       No         0.44       -1.98    No         No       No
+CEMPRO.NS            59.09        1276.4       888.36       Yes      Yes        9.69       1390.39      No       Yes        0.73       -8.63    No         No       No
+ABSLAMC.NS           51.28        1008.4       912.77       Yes      Yes        3.53       1060.31      No       No         -1.55      -5.58    No         No       No
+HEG.NS               69.05        710.75       565.46       Yes      Yes        3.74       617.16       Yes      Yes        4.15       17.03    Yes        No       No
+TORNTPOWER.NS        38.86        1247.7       1398.21      No       Yes        1.17       1378.21      No       No         -1.71      -9.66    No         No       No
+BATAINDIA.NS         47.17        701.05       771.11       No       No         -7.49      676.57       Yes      No         0.42       2.25     No         No       No
+ITCHOTELS.NS         47.46        164.98       175.5        No       No         -4.4       171.06       No       No         -0.17      -3.75    No         No       No
+MMTC.NS              51.46        65.38        63.43        Yes      No         -0.88      64.5         Yes      No         -2.21      0.16     No         No       No
+CREDITACC.NS         56.51        1496.1       1341.5       Yes      Yes        1.8        1525.6       No       Yes        0.9        -6.1     No         No       No
+SYNGENE.NS           39.51        407.25       493.46       No       No         -6.18      414.07       No       No         -1.33      -3.01    No         No       No
+APTUS.NS             47.42        257.75       262.74       No       No         -2.41      273.9        No       No         -0.7       -7.32    No         No       No
+SIGNATURE.NS         44.55        795.3        912.27       No       No         -3.89      796.47       No       No         0.09       -0.26    No         No       No
+COROMANDEL.NS        47.67        1996.1       2095.57      No       No         -1.11      2039.23      No       No         -0.02      -5.28    No         No       No
+FLUOROCHEM.NS        68.23        4621.9       3640.72      Yes      Yes        2.97       4315.05      Yes      Yes        2.84       7.54     Yes        No       No
+BAJAJHLDNG.NS        57.67        11320.0      10717.17     Yes      No         -1.69      10929.41     Yes      Yes        1.01       2.16     No         No       No
+JSL.NS               44.27        701.35       745.21       No       No         -0.88      716.59       No       No         0.28       -1.71    No         No       No
+KARURVYSYA.NS        65.78        335.5        285.0        Yes      Yes        5.96       319.84       Yes      Yes        1.81       5.76     Yes        No       No
+TECHNOE.NS           42.71        987.45       1108.36      No       No         -4.27      1026.02      No       No         -1.27      -2.54    No         No       No
+JBMA.NS              55.03        673.95       618.68       Yes      No         -0.7       666.48       No       No         -1.46      -0.34    No         No       No
+DEEPAKFERT.NS        53.22        1449.2       1295.61      Yes      Yes        0.53       1555.4       No       No         -0.74      -4.71    No         No       No
+BAJAJHFL.NS          44.03        84.85        90.38        No       No         -3.79      86.46        No       No         -0.38      -2.82    No         No       No
+FIRSTCRY.NS          31.7         196.33       252.49       No       No         -8.32      212.51       No       No         -1.21      -8.54    No         No       No
+KEC.NS               30.88        435.95       589.39       No       No         -8.18      475.75       No       No         -2.71      -9.22    No         No       No
+ARE&M.NS             56.68        919.75       867.59       Yes      No         -1.24      892.98       Yes      Yes        1.34       2.82     No         No       No
+ABBOTINDIA.NS        46.76        26230.0      26794.24     No       No         -1.05      26834.63     No       Yes        0.5        -2.85    No         No       No
+BEML.NS              58.99        1935.4       1774.46      Yes      No         -2.7       1817.02      Yes      Yes        1.32       5.39     No         No       No
+ASAHIINDIA.NS        61.44        965.75       911.26       Yes      No         0.2        898.45       Yes      Yes        1.33       6.56     No         No       No
+PARADEEP.NS          58.57        148.48       137.67       Yes      No         -3.38      143.42       Yes      Yes        1.28       4.49     No         No       No
+BERGEPAINT.NS        54.95        524.4        499.28       Yes      No         -0.41      516.24       Yes      No         0.2        0.14     No         No       No
+CHAMBLFERT.NS        43.87        431.15       445.43       No       No         -2.03      446.81       No       No         -1.33      -3.47    No         No       No
+BHARTIHEXA.NS        52.93        1591.2       1603.85      No       No         -0.92      1555.77      Yes      Yes        1.3        3.34     No         No       No
+IRCTC.NS             35.7         484.2        580.62       No       No         -4.69      502.14       No       No         -0.86      -3.9     No         No       No
+LTFOODS.NS           59.31        427.6        396.78       Yes      No         -0.7       396.75       Yes      Yes        1.75       16.46    No         No       No
+GICRE.NS             40.64        355.75       375.68       No       No         -0.51      359.51       No       No         -0.17      -0.77    No         No       No
+ECLERX.NS            53.89        1815.7       1841.12      No       No         -1.58      1725.76      Yes      Yes        3.2        6.46     No         No       No
+JBCHEPHARM.NS        73.12        2408.9       1966.5       Yes      Yes        4.65       2285.1       Yes      Yes        1.55       5.42     Yes        No       No
+AFFLE.NS             63.49        1718.7       1564.11      Yes      No         -3.41      1563.77      Yes      Yes        2.12       10.31    No         No       No
+MEDANTA.NS           65.35        1409.7       1204.14      Yes      Yes        0.68       1375.94      Yes      Yes        1.5        2.11     Yes        No       No
+SCHAEFFLER.NS        48.8         4017.9       3981.97      Yes      No         0.15       4107.41      No       No         -0.67      -2.42    No         No       No
+CASTROLIND.NS        67.78        187.77       177.82       Yes      No         -0.38      181.48       Yes      Yes        0.63       3.19     No         No       No
+KPIL.NS              65.45        1404.5       1220.63      Yes      Yes        0.87       1339.15      Yes      No         0.09       4.01     No         No       Yes
+ASTERDM.NS           51.68        761.55       694.57       Yes      Yes        3.23       806.04       No       No         0.05       -6.83    No         No       No
+IGIL.NS              47.24        338.05       334.86       Yes      No         -0.22      346.4        No       No         -0.56      -1.95    No         No       No
+NCC.NS               49.68        149.56       154.08       No       No         -5.46      142.35       Yes      No         -0.99      3.82     No         No       No
+FINCABLES.NS         66.54        1260.5       913.82       Yes      Yes        4.21       1099.52      Yes      Yes        2.01       16.88    Yes        No       No
+WHIRLPOOL.NS         38.3         768.5        905.78       No       No         -6.89      790.72       No       No         -0.54      -3.21    No         No       No
+TIMKEN.NS            43.19        3134.1       3270.18      No       Yes        0.77       3258.14      No       No         -1.91      -5.01    No         No       No
+GLAXO.NS             70.48        2902.2       2421.08      Yes      No         -0.21      2565.64      Yes      Yes        3.37       13.97    No         No       No
+USHAMART.NS          53.97        481.3        450.02       Yes      Yes        1.67       496.64       No       No         0.35       -1.24    No         No       No
+CENTRALBK.NS         41.09        31.29        34.72        No       No         -1.92      31.72        No       No         -0.75      -1.33    No         No       No
+IPCALAB.NS           67.18        1911.2       1540.97      Yes      Yes        4.21       1773.3       Yes      Yes        2.62       7.98     Yes        No       Yes
+ABFRL.NS             37.77        54.35        66.68        No       No         -5.5       58.65        No       No         -1.42      -7.72    No         No       No
+HEXT.NS              47.65        532.45       575.6        No       No         -3.25      552.3        Yes      Yes        1.32       0.05     No         No       No
+FIVESTAR.NS          53.29        520.95       498.53       Yes      No         0.39       538.02       No       Yes        0.74       -5.59    No         No       No
+AIAENG.NS            51.91        4348.9       4019.18      Yes      Yes        4.99       4667.64      No       No         -0.84      -8.1     No         No       No
+ZYDUSWELL.NS         46.84        490.8        472.34       Yes      Yes        1.87       550.64       No       No         -0.38      -7.55    No         No       No
+NTPCGREEN.NS         42.4         91.43        96.34        No       No         -1.18      93.0         No       No         -0.7       -1.54    No         No       No
+CRAFTSMAN.NS         70.04        10644.5      8028.4       Yes      Yes        5.8        9754.42      Yes      Yes        1.68       9.12     Yes        No       No
+ELGIEQUIP.NS         67.09        634.35       523.53       Yes      Yes        3.02       590.52       Yes      Yes        0.52       5.84     No         No       Yes
+ACC.NS               34.71        1307.4       1526.2       No       No         -4.26      1352.28      No       No         -0.44      -3.66    No         No       No
+BLS.NS               51.48        271.29       279.14       No       No         -4.17      249.63       No       No         0.04       -3.68    No         No       No
+ACE.NS               74.16        1182.2       943.87       Yes      No         -0.29      1050.93      Yes      Yes        2.5        11.12    No         No       No
+JKCEMENT.NS          45.95        5250.0       5486.96      No       No         -2.67      5446.66      No       No         -0.39      -4.23    No         No       No
+ANURAS.NS            47.59        1243.7       1262.76      No       Yes        1.54       1243.01      Yes      No         -0.55      0.88     No         No       Yes
+URBANCO.NS           64.11        158.6        130.35       Yes      No         0.0        137.0        Yes      Yes        2.04       23.62    No         No       No
+GPIL.NS              42.71        245.09       261.45       No       No         -0.46      247.41       Yes      No         -1.25      0.13     No         No       No
+ELECON.NS            46.49        451.55       467.49       No       No         -3.88      466.33       No       No         -2.97      -4.69    No         No       No
+BALKRISIND.NS        53.38        2350.8       2282.28      Yes      No         -0.3       2256.31      Yes      Yes        0.86       4.42     No         No       No
+CYIENT.NS            47.5         892.65       974.42       No       No         -4.18      861.6        Yes      No         0.13       5.66     No         No       No
+NEWGEN.NS            47.72        522.7        600.97       No       No         -7.2       521.23       Yes      Yes        1.36       1.99     No         No       No
+AFCONS.NS            39.1         278.9        333.55       No       No         -6.45      288.65       No       No         -1.75      -2.91    No         No       No
+CONCORDBIO.NS        64.33        1571.3       1261.41      Yes      No         -2.08      1358.68      Yes      Yes        2.34       12.9     No         No       No
+JMFINANCIL.NS        49.69        128.24       132.26       No       No         -4.11      125.88       Yes      No         0.15       2.66     No         No       No
+LATENTVIEW.NS        39.26        278.1        358.83       No       No         -4.56      294.64       No       No         -0.96      -5.14    No         No       No
+IRCON.NS             37.87        124.72       145.69       No       No         -4.15      129.2        No       No         -1.5       -4.63    No         No       No
+ONESOURCE.NS         43.36        1535.0       1605.21      No       No         -1.96      1613.58      No       No         -0.61      -4.86    No         No       No
+EIDPARRY.NS          48.6         797.3        866.5        No       No         -4.06      767.38       Yes      Yes        1.49       10.31    No         No       No
+TRIDENT.NS           44.8         24.39        25.51        No       No         -1.76      25.27        No       No         -0.59      -3.3     No         No       No
+CLEAN.NS             53.85        825.5        812.02       Yes      No         -5.28      776.46       Yes      Yes        0.69       7.15     No         No       No
+RITES.NS             50.74        218.08       218.39       No       No         -1.98      218.99       No       No         0.49       -0.98    No         No       No
+PVRINOX.NS           71.66        1216.8       1033.8       Yes      No         0.19       1079.41      Yes      Yes        3.21       12.98    No         No       No
+POLYMED.NS           56.15        1719.4       1603.2       Yes      No         -2.0       1705.44      Yes      Yes        1.36       2.21     No         No       No
+LTTS.NS              52.97        3604.6       3680.38      No       No         -2.36      3416.12      Yes      Yes        0.7        5.44     No         No       No
+CAPLIPOINT.NS        68.27        2560.8       1999.99      Yes      Yes        2.98       2564.1       No       Yes        0.55       -2.29    No         No       No
+HONAUT.NS            54.69        36700.0      33743.22     Yes      Yes        0.53       38172.98     No       No         -0.26      -3.39    No         No       No
+GRAVITA.NS           56.9         1821.7       1666.35      Yes      Yes        1.23       1749.45      Yes      Yes        0.81       3.42     Yes        Yes      No
+KIMS.NS              55.27        782.5        708.2        Yes      Yes        1.52       804.47       No       No         -0.12      -3.87    No         No       No
+CARBORUNIV.NS        64.58        1169.8       934.93       Yes      Yes        2.43       1107.31      Yes      No         -0.53      2.35     No         No       Yes
+BLUESTARCO.NS        39.84        1511.9       1730.92      No       No         -2.51      1612.27      No       No         -1.32      -6.49    No         No       No
+RKFORGE.NS           72.82        737.05       559.77       Yes      Yes        2.87       634.91       Yes      Yes        3.56       15.13    Yes        No       No
+VTL.NS               53.98        602.9        533.83       Yes      Yes        5.15       620.35       No       No         -0.97      -3.42    No         No       No
+NSLNISP.NS           43.28        39.79        42.06        No       No         -0.94      42.97        No       No         -2.0       -6.99    No         No       No
+SONATSOFTW.NS        53.04        304.0        296.42       Yes      No         -2.27      300.78       Yes      Yes        0.59       2.2      No         No       No
+MAPMYINDIA.NS        45.06        983.9        1202.34      No       No         -6.44      1029.33      No       Yes        1.53       -5.27    No         No       No
+AIIL.NS              53.78        552.25       523.53       Yes      No         -1.82      542.12       Yes      No         0.04       2.15     No         No       No
+CESC.NS              44.69        155.09       160.54       No       No         0.25       159.15       No       No         -0.53      -2.3     No         No       No
+MGL.NS               51.2         1114.2       1100.5       Yes      No         -1.9       1106.28      Yes      No         -0.87      2.31     No         No       No
+INDIAMART.NS         35.83        1742.2       2055.82      No       No         -3.6       1839.36      No       No         -2.14      -4.76    No         No       No
+CHOLAHLDNG.NS        46.84        1561.8       1675.29      No       No         -2.45      1594.78      No       No         -0.17      -2.9     No         No       No
+ANTHEM.NS            66.51        871.45       715.24       Yes      Yes        0.62       805.01       Yes      Yes        1.85       9.78     Yes        No       No
+SWANCORP.NS          35.86        303.85       372.53       No       No         -5.25      312.05       No       No         -0.73      -3.14    No         No       No
+BALRAMCHIN.NS        80.21        729.35       500.7        Yes      Yes        4.38       608.11       Yes      Yes        3.54       18.32    Yes        No       No
+IRB.NS               37.21        18.95        20.87        No       No         -1.01      20.01        No       No         -1.6       -5.46    No         No       No
+PTCIL.NS             68.98        20629.0      17503.07     Yes      Yes        2.41       18218.57     Yes      Yes        1.87       17.29    Yes        No       No
+UCOBANK.NS           44.6         25.72        27.33        No       No         -1.93      26.38        No       No         -0.8       -1.48    No         No       No
+GILLETTE.NS          40.18        7438.5       7948.56      No       No         -3.03      7649.2       No       No         -0.54      -2.84    No         No       No
+CCL.NS               47.71        1082.3       1049.05      Yes      Yes        3.83       1166.33      No       No         -0.28      -6.75    No         No       No
+RAILTEL.NS           41.88        287.25       317.46       No       No         -3.73      294.97       No       No         -1.72      -4.29    No         No       No
+THELEELA.NS          70.86        561.7        441.62       Yes      Yes        2.42       496.64       Yes      Yes        1.68       10.99    Yes        No       No
+DEEPAKNTR.NS         55.46        1747.1       1627.83      Yes      No         -0.69      1675.57      Yes      Yes        1.0        3.47     No         No       No
+GODREJIND.NS         55.87        1230.0       1063.77      Yes      Yes        1.91       1273.52      No       Yes        1.33       -6.31    No         No       No
+ZENSARTECH.NS        40.88        483.55       579.55       No       No         -6.1       487.57       No       Yes        1.11       -1.64    No         No       No
+DOMS.NS              44.37        2206.3       2361.58      No       No         -1.7       2264.91      No       No         -0.58      -2.62    No         No       No
+FSL.NS               52.74        276.05       275.53       Yes      No         -3.11      267.15       Yes      Yes        1.46       2.66     No         No       No
+SARDAEN.NS           47.83        510.6        520.43       No       No         -1.46      504.29       Yes      No         -0.24      0.34     No         No       No
+DEVYANI.NS           65.89        144.4        124.73       Yes      No         -4.74      121.71       Yes      Yes        3.41       22.42    No         No       No
+IKS.NS               55.08        1786.2       1629.67      Yes      Yes        2.48       1816.09      No       Yes        1.1        -0.78    No         No       No
+FACT.NS              39.86        783.3        845.54       No       No         -1.87      836.71       No       No         -2.35      -6.37    No         No       No
+INTELLECT.NS         40.57        691.25       810.21       No       No         -4.43      729.56       No       No         -1.07      -5.24    No         No       No
+SUMICHEM.NS          58.87        534.65       455.84       Yes      No         -0.37      512.04       Yes      Yes        2.64       2.45     No         No       No
+CHALET.NS            56.03        861.95       829.22       Yes      No         -2.32      834.97       Yes      Yes        1.01       4.94     No         No       No
+AAVAS.NS             46.03        1355.3       1408.06      No       No         -2.26      1438.46      No       No         -0.77      -6.84    No         No       No
+TBOTEK.NS            67.59        1696.5       1425.69      Yes      No         -0.1       1541.18      Yes      Yes        2.15       10.69    No         No       No
+ITI.NS               45.3         279.25       292.08       No       No         -1.92      285.68       No       No         -1.39      -2.39    No         No       No
+SJVN.NS              35.07        65.71        73.52        No       No         -3.98      68.85        No       No         -1.44      -4.33    No         No       No
+AJANTPHARM.NS        72.94        3639.8       2910.96      Yes      Yes        5.26       3429.95      Yes      Yes        2.37       4.38     Yes        No       No
+BAYERCROP.NS         38.8         4071.5       4418.53      No       No         -2.39      4131.45      No       No         -0.3       -2.0     No         No       No
+LINDEINDIA.NS        45.7         6672.0       6650.61      Yes      Yes        1.19       6939.81      No       No         -1.04      -5.32    No         No       No
+NIVABUPA.NS          51.13        82.62        78.72        Yes      Yes        0.89       85.55        No       No         -0.47      -3.45    No         No       No
+AEGISVOPAK.NS        59.09        276.3        232.38       Yes      Yes        1.12       274.73       No       Yes        1.63       -1.54    Yes        No       No
+ATUL.NS              49.76        6509.5       6338.02      Yes      Yes        0.94       6515.15      No       No         0.17       -1.29    No         No       No
+JSWDULUX.NS          53.3         3118.8       3042.66      Yes      No         -1.22      3060.53      Yes      No         -0.34      2.24     No         No       No
+UTIAMC.NS            42.64        893.05       983.7        No       No         -5.08      916.59       No       No         -0.19      -2.83    No         No       No
+ABLBL.NS             30.41        86.12        107.24       No       No         -5.59      93.59        No       No         -1.57      -8.71    No         No       No
+RAINBOW.NS           54.95        1433.2       1315.44      Yes      Yes        1.14       1476.64      No       No         0.15       -0.62    No         No       No
+SAPPHIRE.NS          65.35        242.34       206.4        Yes      No         -5.83      198.68       Yes      Yes        3.75       24.62    No         No       No
+CRISIL.NS            57.95        4514.5       4309.36      Yes      No         -0.87      4294.43      Yes      Yes        1.15       3.89     No         No       No
+CANFINHOME.NS        47.02        830.45       862.26       No       Yes        1.11       849.97       No       No         -0.83      -4.76    No         No       No
+NUVOCO.NS            47.01        322.05       335.32       No       No         -3.37      333.85       No       No         0.43       -4.01    No         No       No
+NAVA.NS              45.46        558.95       578.57       No       No         -2.09      578.82       No       No         -1.17      -1.98    No         No       No
+SBFC.NS              49.86        93.93        96.97        No       No         -2.1       92.39        No       No         0.12       -0.07    No         No       No
+JUBLPHARMA.NS        39.98        880.35       970.41       No       No         -2.2       949.42       No       No         -1.31      -4.44    No         No       No
+ABDL.NS              53.55        595.0        561.61       Yes      Yes        1.72       629.5        No       No         -0.44      -2.95    No         No       No
+SOBHA.NS             42.12        1294.6       1420.87      No       No         -1.51      1390.19      No       No         -1.05      -7.15    No         No       No
+IOB.NS               41.34        33.01        35.12        No       No         -2.21      34.01        No       No         -0.72      -2.42    No         No       No
+TTML.NS              36.39        37.78        44.31        No       No         -5.1       40.18        No       No         -2.28      -6.79    No         No       No
+JUBLINGREA.NS        55.54        718.35       667.95       Yes      Yes        1.28       711.94       No       Yes        1.48       -2.1     Yes        No       No
+RHIM.NS              43.61        375.25       416.23       No       No         -2.03      394.36       No       No         -0.14      -4.69    No         No       No
+PFIZER.NS            59.51        4978.2       4756.89      Yes      No         -0.91      4686.2       Yes      Yes        1.35       4.35     No         No       No
+BIKAJI.NS            36.74        605.75       665.68       No       No         -2.42      634.13       No       No         -1.18      -5.07    No         No       No
+BLUEDART.NS          48.04        5083.0       5330.91      No       No         -1.5       5011.13      Yes      No         0.46       0.9      No         No       No
+SUNTV.NS             37.94        472.05       542.84       No       No         -1.53      492.05       No       No         -1.04      -4.64    No         No       No
+CIEINDIA.NS          37.02        401.05       435.62       No       No         0.14       437.25       No       No         -1.83      -8.68    No         No       No
+TEGA.NS              52.75        1743.2       1761.82      No       No         -2.56      1641.12      Yes      No         -0.44      5.29     No         No       No
+UBL.NS               39.77        1348.9       1507.14      No       No         -3.5       1366.7       No       No         0.22       -1.52    No         No       No
+INDGN.NS             64.51        567.8        504.65       Yes      No         -0.93      526.04       Yes      Yes        1.11       7.48     No         No       No
+CANHLIFE.NS          66.45        155.24       139.64       Yes      No         0.0        146.55       Yes      Yes        1.09       4.81     No         No       No
+3MINDIA.NS           50.74        33640.0      33370.72     Yes      Yes        2.4        34766.02     No       Yes        0.56       -2.68    No         No       No
+BBTC.NS              36.66        1427.4       1642.0       No       No         -3.16      1501.28      No       No         -0.94      -5.3     No         No       No
+ERIS.NS              41.93        1328.2       1428.33      No       No         -2.11      1407.62      No       No         -0.86      -5.94    No         No       No
+SPLPETRO.NS          49.0         697.8        678.48       Yes      No         -1.91      717.09       No       No         -0.48      -3.65    No         No       No
+TRAVELFOOD.NS        52.71        1307.2       1246.96      Yes      No         -0.03      1326.34      No       No         -0.11      -0.78    No         No       No
+GODIGIT.NS           32.45        262.9        319.55       No       No         -3.59      281.85       No       No         -2.27      -7.09    No         No       No
+EIHOTEL.NS           42.77        302.75       331.91       No       No         -2.78      320.93       No       No         -0.8       -6.18    No         No       No
+GALLANTT.NS          44.64        584.4        617.84       No       No         -1.48      626.46       No       No         -2.96      -7.22    No         No       No
+DCMSHRIRAM.NS        50.56        1082.1       1122.69      No       No         -2.01      1028.53      Yes      No         0.21       4.97     No         No       No
+
+Stocks above a rising 44-week moving average (WMA):
+--------------------------------------------------
+SBIN.NS
+LT.NS
+BAJFINANCE.NS
+HINDALCO.NS
+OFSS.NS
+MOTHERSON.NS
+BSE.NS
+ASHOKLEY.NS
+HSCL.NS
+NATIONALUM.NS
+SHRIRAMFIN.NS
+AEGISLOG.NS
+MCX.NS
+TVSMOTOR.NS
+CHOLAFIN.NS
+BANDHANBNK.NS
+NETWEB.NS
+ASIANPAINT.NS
+ADANIENT.NS
+EICHERMOT.NS
+HFCL.NS
+IDEA.NS
+SYRMA.NS
+LODHA.NS
+POWERINDIA.NS
+ADANIPOWER.NS
+HINDZINC.NS
+POLYCAB.NS
+TECHM.NS
+ADANIGREEN.NS
+BHEL.NS
+BAJAJ-AUTO.NS
+SUNPHARMA.NS
+ADANIPORTS.NS
+JINDALSTEL.NS
+AUROPHARMA.NS
+APOLLOHOSP.NS
+HONASA.NS
+TITAN.NS
+M&MFIN.NS
+DATAPATTNS.NS
+KEI.NS
+CGPOWER.NS
+KIRLOSENG.NS
+PAYTM.NS
+IFCI.NS
+BHARATFORG.NS
+NESTLEIND.NS
+CUMMINSIND.NS
+JSWINFRA.NS
+WELCORP.NS
+OIL.NS
+BOSCHLTD.NS
+APARINDS.NS
+LTF.NS
+GRASIM.NS
+UNITDSPR.NS
+MANAPPURAM.NS
+CARTRADE.NS
+AUBANK.NS
+RRKABEL.NS
+PIDILITIND.NS
+EXIDEIND.NS
+UNIONBANK.NS
+YESBANK.NS
+JSWSTEEL.NS
+SONACOMS.NS
+FEDERALBNK.NS
+LAURUSLABS.NS
+SAIL.NS
+NMDC.NS
+RBLBANK.NS
+ANANDRATHI.NS
+ADANIENSOL.NS
+NYKAA.NS
+SOLARINDS.NS
+SIEMENS.NS
+HINDCOPPER.NS
+ATHERENERG.NS
+EMCURE.NS
+INDIANB.NS
+WOCKPHARMA.NS
+ABB.NS
+ABCAPITAL.NS
+MARICO.NS
+PNBHOUSING.NS
+DIVISLAB.NS
+IIFL.NS
+OBEROIRLTY.NS
+SCI.NS
+KPRMILL.NS
+GESHIP.NS
+ZENTEC.NS
+INDUSINDBK.NS
+RADICO.NS
+GLAND.NS
+REDINGTON.NS
+ZYDUSLIFE.NS
+PHOENIXLTD.NS
+ATGL.NS
+APLAPOLLO.NS
+THERMAX.NS
+KALYANKJIL.NS
+ANGELONE.NS
+IDFCFIRSTB.NS
+MAHABANK.NS
+BELRISE.NS
+BIOCON.NS
+TORNTPHARM.NS
+NUVAMA.NS
+PETRONET.NS
+GRAPHITE.NS
+NAVINFLUOR.NS
+CUB.NS
+360ONE.NS
+GLENMARK.NS
+VIJAYA.NS
+CGCL.NS
+ENGINERSIN.NS
+ACUTAAS.NS
+SAILIFE.NS
+TRITURBINE.NS
+ZFCVINDIA.NS
+NAM-INDIA.NS
+ACMESOLAR.NS
+PGEL.NS
+NEULANDLAB.NS
+LLOYDSME.NS
+GABRIEL.NS
+JINDALSAW.NS
+MINDACORP.NS
+J&KBANK.NS
+TATATECH.NS
+CPPLUS.NS
+CHENNPETRO.NS
+SCHNEIDER.NS
+SHYAMMETL.NS
+AARTIIND.NS
+LALPATHLAB.NS
+GRANULES.NS
+MRPL.NS
+WELSPUNLIV.NS
+SAREGAMA.NS
+STARHEALTH.NS
+CEMPRO.NS
+ABSLAMC.NS
+HEG.NS
+CREDITACC.NS
+FLUOROCHEM.NS
+KARURVYSYA.NS
+DEEPAKFERT.NS
+JBCHEPHARM.NS
+MEDANTA.NS
+KPIL.NS
+ASTERDM.NS
+FINCABLES.NS
+USHAMART.NS
+IPCALAB.NS
+AIAENG.NS
+ZYDUSWELL.NS
+CRAFTSMAN.NS
+ELGIEQUIP.NS
+CAPLIPOINT.NS
+HONAUT.NS
+GRAVITA.NS
+KIMS.NS
+CARBORUNIV.NS
+RKFORGE.NS
+VTL.NS
+ANTHEM.NS
+BALRAMCHIN.NS
+PTCIL.NS
+CCL.NS
+THELEELA.NS
+GODREJIND.NS
+IKS.NS
+AJANTPHARM.NS
+LINDEINDIA.NS
+NIVABUPA.NS
+AEGISVOPAK.NS
+ATUL.NS
+RAINBOW.NS
+ABDL.NS
+JUBLINGREA.NS
+3MINDIA.NS
+
+Stocks above a rising 44-day moving average (DMA):
+--------------------------------------------------
+ICICIBANK.NS
+M&M.NS
+BHARTIARTL.NS
+BAJFINANCE.NS
+HINDALCO.NS
+OFSS.NS
+MOTHERSON.NS
+TCS.NS
+ASHOKLEY.NS
+NATIONALUM.NS
+SHRIRAMFIN.NS
+AEGISLOG.NS
+KAYNES.NS
+MCX.NS
+TVSMOTOR.NS
+CHOLAFIN.NS
+HCLTECH.NS
+HEROMOTOCO.NS
+NETWEB.NS
+ETERNAL.NS
+EICHERMOT.NS
+DIXON.NS
+HFCL.NS
+SYRMA.NS
+LODHA.NS
+COFORGE.NS
+NAUKRI.NS
+TECHM.NS
+BHEL.NS
+BAJAJ-AUTO.NS
+AUROPHARMA.NS
+HONASA.NS
+SWIGGY.NS
+TITAN.NS
+M&MFIN.NS
+HAL.NS
+TATACAP.NS
+PAYTM.NS
+JSWINFRA.NS
+WELCORP.NS
+OIL.NS
+BOSCHLTD.NS
+APARINDS.NS
+LTF.NS
+GRASIM.NS
+UNITDSPR.NS
+DLF.NS
+MANAPPURAM.NS
+CARTRADE.NS
+AUBANK.NS
+RRKABEL.NS
+PIDILITIND.NS
+EXIDEIND.NS
+UNIONBANK.NS
+GODREJPROP.NS
+SONACOMS.NS
+FEDERALBNK.NS
+LAURUSLABS.NS
+BAJAJFINSV.NS
+RBLBANK.NS
+PNB.NS
+ANANDRATHI.NS
+PERSISTENT.NS
+NYKAA.NS
+SOLARINDS.NS
+SIEMENS.NS
+HINDCOPPER.NS
+ATHERENERG.NS
+UNOMINDA.NS
+ABB.NS
+ABCAPITAL.NS
+PNBHOUSING.NS
+DIVISLAB.NS
+IIFL.NS
+HYUNDAI.NS
+OBEROIRLTY.NS
+INDUSINDBK.NS
+RADICO.NS
+POLICYBZR.NS
+GLAND.NS
+REDINGTON.NS
+APLAPOLLO.NS
+KALYANKJIL.NS
+HAVELLS.NS
+POONAWALLA.NS
+IDFCFIRSTB.NS
+BLUEJET.NS
+LTM.NS
+PPLPHARMA.NS
+PCBL.NS
+GRAPHITE.NS
+MPHASIS.NS
+NAVINFLUOR.NS
+360ONE.NS
+GLENMARK.NS
+VIJAYA.NS
+JYOTICNC.NS
+SAILIFE.NS
+KFINTECH.NS
+NAM-INDIA.NS
+ACMESOLAR.NS
+CONCOR.NS
+DALBHARAT.NS
+PGEL.NS
+ENDURANCE.NS
+NEULANDLAB.NS
+GABRIEL.NS
+ANANTRAJ.NS
+COHANCE.NS
+JINDALSAW.NS
+MINDACORP.NS
+JUBLFOOD.NS
+BRIGADE.NS
+TATATECH.NS
+CHENNPETRO.NS
+ESCORTS.NS
+ABREL.NS
+AARTIIND.NS
+LALPATHLAB.NS
+GRANULES.NS
+SAGILITY.NS
+MRPL.NS
+WELSPUNLIV.NS
+SAREGAMA.NS
+HEG.NS
+FLUOROCHEM.NS
+BAJAJHLDNG.NS
+KARURVYSYA.NS
+ARE&M.NS
+BEML.NS
+ASAHIINDIA.NS
+PARADEEP.NS
+BHARTIHEXA.NS
+LTFOODS.NS
+ECLERX.NS
+JBCHEPHARM.NS
+AFFLE.NS
+MEDANTA.NS
+CASTROLIND.NS
+FINCABLES.NS
+GLAXO.NS
+IPCALAB.NS
+HEXT.NS
+CRAFTSMAN.NS
+ELGIEQUIP.NS
+ACE.NS
+URBANCO.NS
+BALKRISIND.NS
+NEWGEN.NS
+CONCORDBIO.NS
+EIDPARRY.NS
+CLEAN.NS
+PVRINOX.NS
+POLYMED.NS
+LTTS.NS
+GRAVITA.NS
+RKFORGE.NS
+SONATSOFTW.NS
+ANTHEM.NS
+BALRAMCHIN.NS
+PTCIL.NS
+THELEELA.NS
+DEEPAKNTR.NS
+FSL.NS
+DEVYANI.NS
+SUMICHEM.NS
+CHALET.NS
+TBOTEK.NS
+AJANTPHARM.NS
+SAPPHIRE.NS
+CRISIL.NS
+PFIZER.NS
+INDGN.NS
+CANHLIFE.NS
+
+Stocks above a rising 44 WMA AND a rising 44 DMA:
+--------------------------------------------------
+360ONE.NS
+AARTIIND.NS
+ABB.NS
+ABCAPITAL.NS
+ACMESOLAR.NS
+AEGISLOG.NS
+AJANTPHARM.NS
+ANANDRATHI.NS
+ANTHEM.NS
+APARINDS.NS
+APLAPOLLO.NS
+ASHOKLEY.NS
+ATHERENERG.NS
+AUBANK.NS
+AUROPHARMA.NS
+BAJAJ-AUTO.NS
+BAJFINANCE.NS
+BALRAMCHIN.NS
+BHEL.NS
+BOSCHLTD.NS
+CARTRADE.NS
+CHENNPETRO.NS
+CHOLAFIN.NS
+CRAFTSMAN.NS
+DIVISLAB.NS
+EICHERMOT.NS
+ELGIEQUIP.NS
+EXIDEIND.NS
+FEDERALBNK.NS
+FINCABLES.NS
+FLUOROCHEM.NS
+GABRIEL.NS
+GLAND.NS
+GLENMARK.NS
+GRANULES.NS
+GRAPHITE.NS
+GRASIM.NS
+GRAVITA.NS
+HEG.NS
+HFCL.NS
+HINDALCO.NS
+HINDCOPPER.NS
+HONASA.NS
+IDFCFIRSTB.NS
+IIFL.NS
+INDUSINDBK.NS
+IPCALAB.NS
+JBCHEPHARM.NS
+JINDALSAW.NS
+JSWINFRA.NS
+KALYANKJIL.NS
+KARURVYSYA.NS
+LALPATHLAB.NS
+LAURUSLABS.NS
+LODHA.NS
+LTF.NS
+M&MFIN.NS
+MANAPPURAM.NS
+MCX.NS
+MEDANTA.NS
+MINDACORP.NS
+MOTHERSON.NS
+MRPL.NS
+NAM-INDIA.NS
+NATIONALUM.NS
+NAVINFLUOR.NS
+NETWEB.NS
+NEULANDLAB.NS
+NYKAA.NS
+OBEROIRLTY.NS
+OFSS.NS
+OIL.NS
+PAYTM.NS
+PGEL.NS
+PIDILITIND.NS
+PNBHOUSING.NS
+PTCIL.NS
+RADICO.NS
+RBLBANK.NS
+REDINGTON.NS
+RKFORGE.NS
+RRKABEL.NS
+SAILIFE.NS
+SAREGAMA.NS
+SHRIRAMFIN.NS
+SIEMENS.NS
+SOLARINDS.NS
+SONACOMS.NS
+SYRMA.NS
+TATATECH.NS
+TECHM.NS
+THELEELA.NS
+TITAN.NS
+TVSMOTOR.NS
+UNIONBANK.NS
+UNITDSPR.NS
+VIJAYA.NS
+WELCORP.NS
+WELSPUNLIV.NS
+
+Strong momentum (price > 44DMA > 44WMA, both rising, DMA accelerating):
+  NOTE: these have already run - later/extended entries.
+----------------------------------------------------------------------
+BAJFINANCE.NS
+OFSS.NS
+MOTHERSON.NS
+SHRIRAMFIN.NS
+AEGISLOG.NS
+TVSMOTOR.NS
+CHOLAFIN.NS
+NETWEB.NS
+EICHERMOT.NS
+LODHA.NS
+TECHM.NS
+BAJAJ-AUTO.NS
+AUROPHARMA.NS
+HONASA.NS
+TITAN.NS
+M&MFIN.NS
+PAYTM.NS
+NESTLEIND.NS
+JSWINFRA.NS
+WELCORP.NS
+BOSCHLTD.NS
+LTF.NS
+GRASIM.NS
+UNITDSPR.NS
+MANAPPURAM.NS
+CARTRADE.NS
+RRKABEL.NS
+PIDILITIND.NS
+EXIDEIND.NS
+UNIONBANK.NS
+SONACOMS.NS
+LAURUSLABS.NS
+ANANDRATHI.NS
+NYKAA.NS
+SOLARINDS.NS
+SIEMENS.NS
+HINDCOPPER.NS
+ATHERENERG.NS
+ABCAPITAL.NS
+PNBHOUSING.NS
+DIVISLAB.NS
+IIFL.NS
+OBEROIRLTY.NS
+INDUSINDBK.NS
+RADICO.NS
+GLAND.NS
+REDINGTON.NS
+KALYANKJIL.NS
+IDFCFIRSTB.NS
+TORNTPHARM.NS
+GRAPHITE.NS
+NAVINFLUOR.NS
+CUB.NS
+360ONE.NS
+GLENMARK.NS
+VIJAYA.NS
+SAILIFE.NS
+ACMESOLAR.NS
+PGEL.NS
+NEULANDLAB.NS
+GABRIEL.NS
+JINDALSAW.NS
+MINDACORP.NS
+TATATECH.NS
+CHENNPETRO.NS
+AARTIIND.NS
+LALPATHLAB.NS
+GRANULES.NS
+MRPL.NS
+WELSPUNLIV.NS
+SAREGAMA.NS
+HEG.NS
+FLUOROCHEM.NS
+KARURVYSYA.NS
+JBCHEPHARM.NS
+MEDANTA.NS
+FINCABLES.NS
+IPCALAB.NS
+CRAFTSMAN.NS
+GRAVITA.NS
+RKFORGE.NS
+ANTHEM.NS
+BALRAMCHIN.NS
+PTCIL.NS
+THELEELA.NS
+AJANTPHARM.NS
+AEGISVOPAK.NS
+JUBLINGREA.NS
+
+EARLY - pullback in uptrend (44WMA rising, 0-5% above 44DMA, RSI 50-65):
+  Trend confirmed but entry not extended - best risk/reward.
+----------------------------------------------------------------------
+BAJFINANCE.NS
+ASHOKLEY.NS
+CHOLAFIN.NS
+EICHERMOT.NS
+TECHM.NS
+BHEL.NS
+JSWINFRA.NS
+LTF.NS
+NMDC.NS
+ABB.NS
+OBEROIRLTY.NS
+INDUSINDBK.NS
+PGEL.NS
+TATATECH.NS
+GRAVITA.NS
+
+TURN - fresh reclaim / DMA curling up (44WMA rising):
+  Earliest signal, more speculative - confirm before entry.
+----------------------------------------------------------------------
+HINDALCO.NS
+NATIONALUM.NS
+MCX.NS
+IDEA.NS
+JINDALSTEL.NS
+DATAPATTNS.NS
+IFCI.NS
+JSWINFRA.NS
+OIL.NS
+LTF.NS
+MANAPPURAM.NS
+CARTRADE.NS
+SAIL.NS
+NMDC.NS
+NYKAA.NS
+ABCAPITAL.NS
+OBEROIRLTY.NS
+KPRMILL.NS
+ZENTEC.NS
+PETRONET.NS
+ENGINERSIN.NS
+NAM-INDIA.NS
+ACMESOLAR.NS
+GRANULES.NS
+WELSPUNLIV.NS
+KPIL.NS
+IPCALAB.NS
+ELGIEQUIP.NS
+ANURAS.NS
+CARBORUNIV.NS

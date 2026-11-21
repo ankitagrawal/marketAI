@@ -17,6 +17,8 @@ import requests
 import yfinance as yf
 import pandas as pd
 
+from pnlHistory import get_trade_info, in_trading_zone
+
 SCREENER_HEADERS = {"User-Agent": "Mozilla/5.0"}
 SCREENER_SEARCH_URL = "https://www.screener.in/api/company/search/"
 SCREENER_CHART_URL  = "https://www.screener.in/api/company/{id}/chart/"
@@ -24,8 +26,14 @@ SCREENER_CHART_URL  = "https://www.screener.in/api/company/{id}/chart/"
 
 # ── Data ─────────────────────────────────────────────────────────────────────
 
+def _yf_download(symbol, period="1y", interval="1d", auto_adjust=True, progress=False):
+    """Thread-safe stand-in for yf.download (which shares global state across
+    concurrent calls). Returns the same OHLCV frame for a single symbol."""
+    return yf.Ticker(symbol).history(period=period, interval=interval,
+                                     auto_adjust=auto_adjust)
+
 def get_ohlcv(symbol, period="1y", interval="1d"):
-    df = yf.download(symbol, period=period, interval=interval,
+    df = _yf_download(symbol, period=period, interval=interval,
                      auto_adjust=True, progress=False)
     if df.empty:
         return None
@@ -70,6 +78,18 @@ def atr(df, period=14):
                     (lo - cl.shift()).abs()], axis=1).max(axis=1)
     return tr.ewm(alpha=1/period, adjust=False).mean()
 
+def coppock(close, roc1=11, roc2=14, wma_period=10):
+    """
+    Coppock Curve — long-term momentum indicator on monthly closes:
+        WMA(wma_period) of [ROC(roc1) + ROC(roc2)]
+    A rising curve from below zero is the classic "major bottom" buy signal.
+    """
+    roc_sum = close.pct_change(roc1) * 100 + close.pct_change(roc2) * 100
+    weights = pd.Series(range(1, wma_period + 1), dtype=float)
+    return roc_sum.rolling(wma_period).apply(
+        lambda x: (x * weights.values).sum() / weights.sum(), raw=True
+    )
+
 
 # ── 5-Year Median PE Valuation ─────────────────────────────────────────────────
 
@@ -86,8 +106,8 @@ def _bare_symbol(symbol):
     return symbol.split(".")[0]
 
 
-def screener_company_id(symbol):
-    """Resolve a bare NSE/BSE symbol to screener.in's numeric company id."""
+def screener_company_lookup(symbol):
+    """Resolve a bare NSE/BSE symbol to screener.in's (company_id, page_url)."""
     bare = _bare_symbol(symbol)
     resp = requests.get(SCREENER_SEARCH_URL, params={"q": bare},
                         headers=SCREENER_HEADERS, timeout=10)
@@ -95,8 +115,14 @@ def screener_company_id(symbol):
     for hit in resp.json():
         m = re.match(r"^/company/([^/]+)/", hit.get("url", ""))
         if m and m.group(1).upper() == bare.upper():
-            return hit["id"]
-    return None
+            return hit["id"], hit["url"]
+    return None, None
+
+
+def screener_company_id(symbol):
+    """Resolve a bare NSE/BSE symbol to screener.in's numeric company id."""
+    company_id, _ = screener_company_lookup(symbol)
+    return company_id
 
 
 def get_pe_valuation_screener(symbol):
@@ -256,7 +282,7 @@ def get_pe_valuation_yfinance(symbol, current_price=None, current_pe=None):
         if eps_hist.empty:
             return result
 
-        price_hist = yf.download(symbol, period="5y", interval="1d",
+        price_hist = _yf_download(symbol, period="5y", interval="1d",
                                   auto_adjust=True, progress=False)
         if price_hist is None or price_hist.empty:
             return result
@@ -315,6 +341,222 @@ def get_pe_valuation(symbol, current_price=None, current_pe=None):
     return get_pe_valuation_yfinance(symbol, current_price=current_price, current_pe=current_pe)
 
 
+# ── Fundamental Quality Flags ───────────────────────────────────────────────────
+#
+# Scrapes screener.in's Balance Sheet, Cash Flow, Profit & Loss, and
+# Shareholding Pattern tables (rendered as plain HTML tables on the company
+# page — no separate JSON API covers these) to surface quality signals and
+# red flags with a plain-English reason for each.
+
+SCREENER_PAGE_URL = "https://www.screener.in{path}"
+
+
+def _fetch_screener_page(symbol):
+    _, url_path = screener_company_lookup(symbol)
+    if url_path is None:
+        return None
+    resp = requests.get(SCREENER_PAGE_URL.format(path=url_path),
+                        headers=SCREENER_HEADERS, timeout=15)
+    resp.raise_for_status()
+    return resp.text
+
+
+def _section_html(page_html, section_id):
+    start = page_html.find(f'id="{section_id}"')
+    if start == -1:
+        return None
+    start = page_html.rfind("<section", 0, start)
+    next_start = page_html.find("<section", start + 1)
+    end = next_start if next_start != -1 else len(page_html)
+    return page_html[start:end]
+
+
+def _section_tables(page_html, section_id):
+    frag = _section_html(page_html, section_id)
+    if frag is None:
+        return []
+    try:
+        from io import StringIO
+        return pd.read_html(StringIO(frag))
+    except ValueError:
+        return []
+
+
+def _row(df, label):
+    """Fetch a table row by its leading label, ignoring the '+' expand marker."""
+    for idx in df.index:
+        cell = str(df.iloc[idx, 0]).replace("\xa0+", "").strip()
+        if cell == label:
+            return df.iloc[idx, 1:]
+    return None
+
+
+def _to_numeric(series):
+    return pd.to_numeric(
+        series.astype(str).str.replace("%", "", regex=False)
+                          .str.replace(",", "", regex=False),
+        errors="coerce",
+    )
+
+
+def _flag(name, severity, description):
+    return {"flag": name, "severity": severity, "description": description}
+
+
+def get_quality_flags(symbol):
+    """
+    Fundamental quality/red-flag scan using screener.in's Balance Sheet,
+    Cash Flow, Profit & Loss, and Shareholding tables.
+
+    severity: "red" (red flag), "yellow" (caution), "green" (positive signal)
+    Returns {"flags": [...], "error": str|None}
+    """
+    out = {"flags": [], "error": None}
+
+    try:
+        page = _fetch_screener_page(symbol)
+        if page is None:
+            out["error"] = "Could not resolve symbol on screener.in"
+            return out
+
+        # ── Cash flow quality: CFO vs Operating Profit ──────────────────────
+        cf_tables = _section_tables(page, "cash-flow")
+        if cf_tables:
+            cfop = _to_numeric(_row(cf_tables[0], "CFO/OP"))
+            if cfop is not None and len(cfop.dropna()) >= 3:
+                recent = cfop.dropna().iloc[-3:]
+                avg_recent = recent.mean()
+                if avg_recent < 70:
+                    out["flags"].append(_flag(
+                        "Weak cash conversion", "red",
+                        f"Cash from Operations has averaged only {avg_recent:.0f}% of "
+                        f"Operating Profit over the last 3 years — a large chunk of "
+                        f"reported profit isn't turning into actual cash, which can mean "
+                        f"aggressive revenue recognition or rising receivables."
+                    ))
+                elif avg_recent >= 90:
+                    out["flags"].append(_flag(
+                        "Strong cash conversion", "green",
+                        f"Cash from Operations has averaged {avg_recent:.0f}% of Operating "
+                        f"Profit over the last 3 years — reported profit is backed by real cash, "
+                        f"a hallmark of high earnings quality."
+                    ))
+
+        # ── Balance sheet: leverage trend ───────────────────────────────────
+        bs_tables = _section_tables(page, "balance-sheet")
+        if bs_tables:
+            borrowings = _to_numeric(_row(bs_tables[0], "Borrowings"))
+            reserves   = _to_numeric(_row(bs_tables[0], "Reserves"))
+            if borrowings is not None and reserves is not None:
+                b, r = borrowings.dropna(), reserves.dropna()
+                if len(b) >= 2 and len(r) >= 2 and r.iloc[0] > 0 and b.iloc[0] >= 0:
+                    debt_growth = (b.iloc[-1] - b.iloc[0])
+                    reserve_growth_pct = (r.iloc[-1] / r.iloc[0] - 1) * 100 if r.iloc[0] else 0
+                    debt_to_reserves_now = (b.iloc[-1] / r.iloc[-1] * 100) if r.iloc[-1] else 0
+                    if debt_to_reserves_now > 50 and debt_growth > 0 and b.iloc[-1] > b.iloc[0] * 1.5:
+                        out["flags"].append(_flag(
+                            "Rising leverage", "red",
+                            f"Borrowings grew from ₹{b.iloc[0]:,.0f} Cr to ₹{b.iloc[-1]:,.0f} Cr "
+                            f"while Reserves grew {reserve_growth_pct:.0f}% over the same period — "
+                            f"debt is now {debt_to_reserves_now:.0f}% of Reserves and climbing, "
+                            f"a sign the business may be leaning more on borrowed capital."
+                        ))
+                    elif debt_to_reserves_now < 15:
+                        out["flags"].append(_flag(
+                            "Low leverage", "green",
+                            f"Borrowings are just {debt_to_reserves_now:.0f}% of Reserves "
+                            f"(₹{b.iloc[-1]:,.0f} Cr vs ₹{r.iloc[-1]:,.0f} Cr) — the balance "
+                            f"sheet carries very little debt risk."
+                        ))
+
+        # ── P&L: margin stability + growth deceleration ─────────────────────
+        pl_tables = _section_tables(page, "profit-loss")
+        if pl_tables:
+            opm = _to_numeric(_row(pl_tables[0], "OPM %"))
+            if opm is not None:
+                opm_hist = opm.dropna().iloc[:-1] if len(opm.dropna()) > 1 else opm.dropna()
+                if len(opm_hist) >= 3:
+                    recent3 = opm_hist.iloc[-3:]
+                    if recent3.iloc[-1] < recent3.iloc[0] - 3 and recent3.is_monotonic_decreasing:
+                        out["flags"].append(_flag(
+                            "Margin erosion", "red",
+                            f"Operating margin has declined for 3 straight years "
+                            f"({recent3.iloc[0]:.0f}% → {recent3.iloc[-1]:.0f}%) — signals "
+                            f"weakening pricing power or rising costs relative to sales."
+                        ))
+                    elif opm_hist.std() < 2:
+                        out["flags"].append(_flag(
+                            "Stable margins", "green",
+                            f"Operating margin has stayed within a tight "
+                            f"{opm_hist.min():.0f}%–{opm_hist.max():.0f}% band over the "
+                            f"available history — consistent pricing power and cost control."
+                        ))
+
+            for tbl in pl_tables[1:]:
+                cols = [str(c) for c in tbl.columns]
+                if "Compounded Profit Growth" in cols[0]:
+                    growth = {str(row[0]).rstrip(":"): row[1] for row in tbl.itertuples(index=False)}
+                    g3 = growth.get("3 Years")
+                    g5 = growth.get("5 Years")
+                    if g3 is not None and g5 is not None:
+                        g3n = pd.to_numeric(str(g3).replace("%", ""), errors="coerce")
+                        g5n = pd.to_numeric(str(g5).replace("%", ""), errors="coerce")
+                        if pd.notna(g3n) and pd.notna(g5n) and g3n < g5n - 5:
+                            out["flags"].append(_flag(
+                                "Growth decelerating", "yellow",
+                                f"3-year profit growth ({g3n:.0f}%) is notably lower than "
+                                f"5-year profit growth ({g5n:.0f}%) — the business is compounding "
+                                f"profit more slowly than its own recent history."
+                            ))
+
+        # ── Shareholding: FII and Promoter trend ────────────────────────────
+        sh_tables = _section_tables(page, "shareholding")
+        if sh_tables:
+            fii  = _to_numeric(_row(sh_tables[0], "FIIs"))
+            promoters = _to_numeric(_row(sh_tables[0], "Promoters"))
+            if fii is not None:
+                fii_hist = fii.dropna()
+                if len(fii_hist) >= 4:
+                    window = fii_hist  # use the full available history (up to ~12 quarters)
+                    diffs = window.diff().dropna()
+                    declining_share = (diffs < 0).mean() if len(diffs) else 0
+                    total_drop = window.iloc[0] - window.iloc[-1]
+                    if declining_share >= 0.55 and total_drop > 1:
+                        out["flags"].append(_flag(
+                            "FII holding declining", "yellow",
+                            f"Foreign institutional holding has trended down over the last "
+                            f"{len(window)} quarters ({window.iloc[0]:.1f}% → "
+                            f"{window.iloc[-1]:.1f}%) — large global investors have been "
+                            f"steadily reducing exposure, which can precede or reflect "
+                            f"slower growth expectations."
+                        ))
+            if promoters is not None:
+                p_hist = promoters.dropna()
+                if len(p_hist) >= 4:
+                    full_drop = p_hist.iloc[0] - p_hist.iloc[-1]
+                    if full_drop > 1:
+                        out["flags"].append(_flag(
+                            "Promoter holding declining", "red",
+                            f"Promoter holding fell from {p_hist.iloc[0]:.1f}% to "
+                            f"{p_hist.iloc[-1]:.1f}% over the last {len(p_hist)} quarters "
+                            f"— check company announcements for the reason (block deal, "
+                            f"pledge, open offer, etc.); unexplained promoter selling is a "
+                            f"classic red flag."
+                        ))
+                    elif full_drop <= 0.05:
+                        out["flags"].append(_flag(
+                            "Promoter holding stable", "green",
+                            f"Promoter holding has stayed flat at ~{p_hist.iloc[-1]:.1f}% "
+                            f"over the last {len(p_hist)} quarters — no dilution or "
+                            f"insider-selling concern."
+                        ))
+
+    except Exception as e:
+        out["error"] = str(e)
+
+    return out
+
+
 # ── Value Scoring ─────────────────────────────────────────────────────────────
 
 def get_value_score(symbol, current_price):
@@ -332,6 +574,15 @@ def get_value_score(symbol, current_price):
         "weekly_rsi":       None,
         "weekly_rsi_verdict": "N/A",
         "dist_from_200ma_pct": None,
+        "coppock_daily":            None,
+        "coppock_daily_prev":       None,
+        "coppock_daily_verdict":    "N/A",
+        "coppock_monthly":          None,
+        "coppock_monthly_prev":     None,
+        "coppock_monthly_verdict":  "N/A",
+        "coppock_weekly":           None,
+        "coppock_weekly_prev":      None,
+        "coppock_weekly_verdict":   "N/A",
         "value_score":      0,
         "value_label":      "N/A",
     }
@@ -364,14 +615,27 @@ def get_value_score(symbol, current_price):
     except Exception:
         pass
 
-    # Weekly RSI from 2 years of weekly data
+    def _coppock_verdict(cur_cop, prev_cop):
+        rising = cur_cop > prev_cop
+        if cur_cop < 0 and rising:
+            return "TURNING UP FROM NEGATIVE (bullish) 🟢"
+        elif cur_cop < 0:
+            return "NEGATIVE, still falling"
+        elif rising:
+            return "POSITIVE, rising"
+        else:
+            return "POSITIVE, falling"
+
+    # Weekly RSI + weekly Coppock from 2 years of weekly data
     try:
-        df_w = yf.download(symbol, period="2y", interval="1wk",
+        df_w = _yf_download(symbol, period="2y", interval="1wk",
                            auto_adjust=True, progress=False)
         if not df_w.empty:
             if isinstance(df_w.columns, pd.MultiIndex):
                 df_w.columns = [col[0] for col in df_w.columns]
-            w_rsi = rsi(df_w["Close"].dropna())
+            closes_w = df_w["Close"].dropna()
+
+            w_rsi = rsi(closes_w)
             val = float(w_rsi.dropna().iloc[-1])
             result["weekly_rsi"] = round(val, 1)
             if val < 45:
@@ -380,6 +644,45 @@ def get_value_score(symbol, current_price):
                 result["weekly_rsi_verdict"] = "NEUTRAL (healthy)"
             else:
                 result["weekly_rsi_verdict"] = "OVERBOUGHT (expensive)"
+
+            cop_w = coppock(closes_w).dropna()
+            if len(cop_w) >= 2:
+                cur_cop, prev_cop = float(cop_w.iloc[-1]), float(cop_w.iloc[-2])
+                result["coppock_weekly"]      = round(cur_cop, 2)
+                result["coppock_weekly_prev"] = round(prev_cop, 2)
+                result["coppock_weekly_verdict"] = _coppock_verdict(cur_cop, prev_cop)
+    except Exception:
+        pass
+
+    # Daily Coppock from 2 years of daily closes
+    try:
+        df_d = _yf_download(symbol, period="2y", interval="1d",
+                           auto_adjust=True, progress=False)
+        if not df_d.empty:
+            if isinstance(df_d.columns, pd.MultiIndex):
+                df_d.columns = [col[0] for col in df_d.columns]
+            cop_d = coppock(df_d["Close"].dropna()).dropna()
+            if len(cop_d) >= 2:
+                cur_cop, prev_cop = float(cop_d.iloc[-1]), float(cop_d.iloc[-2])
+                result["coppock_daily"]      = round(cur_cop, 2)
+                result["coppock_daily_prev"] = round(prev_cop, 2)
+                result["coppock_daily_verdict"] = _coppock_verdict(cur_cop, prev_cop)
+    except Exception:
+        pass
+
+    # Coppock Curve from monthly closes (needs ~3y+ of history for ROC(14) + WMA(10))
+    try:
+        df_m = _yf_download(symbol, period="15y", interval="1mo",
+                           auto_adjust=True, progress=False)
+        if not df_m.empty:
+            if isinstance(df_m.columns, pd.MultiIndex):
+                df_m.columns = [col[0] for col in df_m.columns]
+            cop_m = coppock(df_m["Close"].dropna()).dropna()
+            if len(cop_m) >= 2:
+                cur_cop, prev_cop = float(cop_m.iloc[-1]), float(cop_m.iloc[-2])
+                result["coppock_monthly"]      = round(cur_cop, 2)
+                result["coppock_monthly_prev"] = round(prev_cop, 2)
+                result["coppock_monthly_verdict"] = _coppock_verdict(cur_cop, prev_cop)
     except Exception:
         pass
 
@@ -613,7 +916,14 @@ def analyze_stock(symbol):
     value   = get_value_score(symbol, latest["price"])
     pe_val  = get_pe_valuation(symbol, current_price=latest["price"], current_pe=value["pe"])
     peg     = get_peg_ratio(symbol)
+    quality = get_quality_flags(symbol)
     trigger = next_trigger(g1, g2, g3, g4, latest)
+
+    my_trade = get_trade_info(symbol)
+    below_last_sell = None
+    if my_trade and my_trade.get("avg_sell_price"):
+        below_last_sell = latest["price"] <= my_trade["avg_sell_price"]
+    zone_hit = in_trading_zone(latest["price"], my_trade["avg_sell_price"]) if my_trade else False
 
     return {
         "symbol":      symbol,
@@ -626,8 +936,35 @@ def analyze_stock(symbol):
         "value":       value,
         "pe_valuation": pe_val,
         "peg":         peg,
+        "quality":     quality,
         "trigger":     trigger,
+        "my_trade":    my_trade,
+        "below_last_sell": below_last_sell,
+        "in_trading_zone": zone_hit,
     }
+
+
+def analyze_stocks_parallel(symbols, chunk_size=50, max_workers=8, progress_cb=None):
+    """Analyze symbols in chunks, each chunk processed by a thread pool.
+    Returns results in the same order as `symbols`. A failure in one stock
+    becomes an error result instead of aborting the batch.
+    progress_cb(done, total) is called from the calling thread."""
+    from concurrent.futures import ThreadPoolExecutor
+
+    def _safe(sym):
+        try:
+            return analyze_stock(sym)
+        except Exception as e:
+            return {"symbol": sym, "error": f"{type(e).__name__}: {e}"}
+
+    results, total = [], len(symbols)
+    with ThreadPoolExecutor(max_workers=max_workers) as pool:
+        for i in range(0, total, chunk_size):
+            chunk = symbols[i:i + chunk_size]
+            results.extend(pool.map(_safe, chunk))
+            if progress_cb:
+                progress_cb(len(results), total)
+    return results
 
 
 # ── Print Report ──────────────────────────────────────────────────────────────
@@ -708,9 +1045,18 @@ def print_report(result, verbose=True):
                    if v['week52_position'] is not None else "52w range: N/A"
         wrsi_str = f"Weekly RSI: {v['weekly_rsi']} — {v['weekly_rsi_verdict']}" \
                    if v['weekly_rsi'] else "Weekly RSI: N/A"
+        cop_d_str = f"Coppock (daily): {v['coppock_daily']} (prev {v['coppock_daily_prev']}) — {v['coppock_daily_verdict']}" \
+                    if v['coppock_daily'] is not None else "Coppock (daily): N/A"
+        cop_w_str = f"Coppock (weekly): {v['coppock_weekly']} (prev {v['coppock_weekly_prev']}) — {v['coppock_weekly_verdict']}" \
+                    if v['coppock_weekly'] is not None else "Coppock (weekly): N/A"
+        cop_m_str = f"Coppock (monthly): {v['coppock_monthly']} (prev {v['coppock_monthly_prev']}) — {v['coppock_monthly_verdict']}" \
+                    if v['coppock_monthly'] is not None else "Coppock (monthly): N/A"
         print(f"    {pe_str}")
         print(f"    {pos_str}")
         print(f"    {wrsi_str}")
+        print(f"    {cop_d_str}")
+        print(f"    {cop_w_str}")
+        print(f"    {cop_m_str}")
 
         # 5-year median PE valuation
         pv = result.get("pe_valuation")
@@ -726,6 +1072,28 @@ def print_report(result, verbose=True):
             print(f"\n  PEG Ratio: {peg['peg']}")
             print(f"    P/E: {peg['current_pe']}   3Y EPS CAGR: {peg['eps_cagr_pct']}%   "
                   f"(EPS {peg['eps_3y_ago']} → {peg['eps_now']})")
+
+        # Fundamental quality flags
+        quality = result.get("quality")
+        if quality and quality.get("flags"):
+            icon_by_severity = {"red": "🔴", "yellow": "🟡", "green": "🟢"}
+            print(f"\n  Fundamental Quality Flags:")
+            for f in quality["flags"]:
+                icon = icon_by_severity.get(f["severity"], "•")
+                print(f"    {icon} {f['flag']}")
+                print(f"        {f['description']}")
+        elif quality and quality.get("error"):
+            print(f"\n  Fundamental Quality Flags: unavailable ({quality['error']})")
+
+        my_trade = result.get("my_trade")
+        if my_trade:
+            print(f"\n  My Trade History:")
+            print(f"    Bought {my_trade['quantity']:g} @ avg ₹{my_trade['avg_buy_price']}   "
+                  f"Sold @ avg ₹{my_trade['avg_sell_price']}  (last sell: {my_trade['last_sell_date']})")
+            print(f"    Realized P&L: ₹{my_trade['realized_pl']:,.2f} ({my_trade['realized_pl_pct']:+.1f}%)")
+            if result.get("in_trading_zone"):
+                tag = "at/below last sell price" if result.get("below_last_sell") else "back near last sell price"
+                print(f"    🔁 Currently {tag} — potential re-entry zone")
 
         if tr:
             print(f"\n  Trade Plan:")
@@ -745,10 +1113,14 @@ def print_report(result, verbose=True):
         peg = result.get("peg") or {}
         pe_verdict = pv.get("verdict", "N/A")
         peg_str    = peg.get("peg", "N/A")
+        quality  = result.get("quality") or {}
+        n_red    = sum(1 for f in quality.get("flags", []) if f["severity"] == "red")
+        n_yellow = sum(1 for f in quality.get("flags", []) if f["severity"] == "yellow")
+        flags_str = f"🔴{n_red} 🟡{n_yellow}" if (n_red or n_yellow) else "clean"
         print(f"  {signal}  {s:<20} Gates:{result['gates_score']}  "
               f"RSI:{l['rsi']:<6} ADX:{l['adx']:<6} "
               f"Value:{v['value_score']}/4  52w%:{v['week52_position']}  "
-              f"5yPE:{pe_verdict}  PEG:{peg_str}  "
+              f"5yPE:{pe_verdict}  PEG:{peg_str}  Flags:{flags_str}  "
               f"Stage: {result['stage'].split('—')[0].strip()}")
         print(f"           {'':20} → {result['trigger']}")
 

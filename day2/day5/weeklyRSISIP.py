@@ -1,3 +1,5 @@
+from datetime import date
+
 import yfinance as yf
 
 # weekly RSI above 70 eligible for profit booking
@@ -50,6 +52,38 @@ def calculate_rsi(symbol, period=14):
             return None
 
         return round(float(rsi.dropna().iloc[-1]), 2)
+
+    except Exception as e:
+        print(f"Skipping {symbol}: {e}")
+        return None
+
+
+def half_month_high(symbol):
+    """Highest price in the current half of the month (1-15 first, 16-end second)."""
+    try:
+        today = date.today()
+        start_day = 1 if today.day <= 15 else 16
+        start = today.replace(day=start_day)
+
+        df = yf.download(
+            symbol,
+            start=start.isoformat(),
+            interval="1d",
+            auto_adjust=True,
+            progress=False,
+        )
+        if df.empty:
+            print(f"Skipping {symbol}: No data for current half-month")
+            return None
+
+        high = df["High"].iloc[:, 0].dropna()
+        close = df["Close"].iloc[:, 0].dropna()
+        if high.empty or close.empty:
+            return None
+
+        peak = float(high.max())
+        last = float(close.iloc[-1])
+        return round(peak, 2), round(last, 2), round((last / peak - 1) * 100, 2)
 
     except Exception as e:
         print(f"Skipping {symbol}: {e}")
@@ -127,3 +161,13 @@ print("\n========== RSI < 45 (More Allocation) ==========")
 for ticker, rsi in results:
     if rsi < 45:
         print(f"{ticker:<20} {rsi:>6.2f}")
+today = date.today()
+half = "1-15" if today.day <= 15 else "16-end"
+print(f"\n========== HIGH OF CURRENT HALF-MONTH ({today:%b %Y}, days {half}) ==========")
+print(f"{'ETF':<20} {'High':>10} {'Last':>10} {'% from high':>12}")
+print("-" * 55)
+for ticker, _ in results:
+    res = half_month_high(ticker)
+    if res:
+        peak, last, pct = res
+        print(f"{ticker:<20} {peak:>10.2f} {last:>10.2f} {pct:>11.2f}%")

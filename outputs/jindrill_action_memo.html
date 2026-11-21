@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jindal Drilling Research Note</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --paper:#F3F4F7;
+    --paper-raised:#FFFFFF;
+    --ink:#161A22;
+    --ink-soft:#4A505C;
+    --ink-faint:#868C99;
+    --line:#D8DBE2;
+    --line-strong:#B8BDC9;
+    --accent:#A66423;
+    --accent-soft:#F1E3D2;
+    --accent-ink:#5C3A14;
+    --up:#276749;
+    --up-soft:#E3F0E8;
+    --down:#A32B2B;
+    --down-soft:#FBE7E7;
+    --stamp:#8A4B18;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#15171C;
+      --paper-raised:#1D2027;
+      --ink:#EBEDF2;
+      --ink-soft:#AEB3C0;
+      --ink-faint:#767C8A;
+      --line:#333743;
+      --line-strong:#454A58;
+      --accent:#D89456;
+      --accent-soft:#3A2C1B;
+      --accent-ink:#F0D3AC;
+      --up:#6FBE96;
+      --up-soft:#1B2C24;
+      --down:#E38080;
+      --down-soft:#2E1C1C;
+      --stamp:#D89456;
+      color-scheme: dark;
+    }
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0; padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', system-ui, sans-serif;
+    line-height:1.55;
+    padding:56px 24px 96px;
+  }
+  .sheet{
+    max-width:760px;
+    margin:0 auto;
+  }
+
+  /* ---------- Letterhead ---------- */
+  .letterhead{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    border-bottom:2px solid var(--ink);
+    padding-bottom:18px;
+    margin-bottom:6px;
+    gap:16px;
+  }
+  .letterhead-left{display:flex; flex-direction:column; gap:2px;}
+  .kicker{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+  }
+  .doc-title{
+    font-family:'Fraunces', Georgia, serif;
+    font-weight:600;
+    font-size:clamp(28px, 4.2vw, 36px);
+    letter-spacing:-0.01em;
+    text-wrap:balance;
+    margin:2px 0 0;
+  }
+  .letterhead-right{
+    text-align:right;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    line-height:1.6;
+  }
+
+  .meta-row{
+    display:flex;
+    justify-content:space-between;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-faint);
+    padding:10px 0 28px;
+    border-bottom:1px solid var(--line);
+    margin-bottom:28px;
+  }
+
+  /* ---------- Verdict block ---------- */
+  .verdict{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:24px;
+    align-items:center;
+    background:var(--paper-raised);
+    border:1px solid var(--line);
+    border-left:5px solid var(--accent);
+    border-radius:3px;
+    padding:22px 26px;
+    margin-bottom:36px;
+  }
+  .verdict-score{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:56px;
+    line-height:1;
+    color:var(--accent-ink);
+    font-variant-numeric:tabular-nums;
+    white-space:nowrap;
+  }
+  .verdict-score span{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:16px;
+    font-weight:500;
+    color:var(--ink-faint);
+  }
+  .verdict-text .label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--stamp);
+    font-weight:600;
+  }
+  .verdict-text .action{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:21px;
+    margin:3px 0 4px;
+  }
+  .verdict-text .sub{
+    font-size:14px;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- Section headers ---------- */
+  h2{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:19px;
+    margin:0 0 12px;
+    padding-bottom:8px;
+    border-bottom:1px solid var(--line);
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+  }
+  h2 .n{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--accent);
+    font-weight:600;
+  }
+  section{margin-bottom:34px;}
+  p{margin:0 0 12px; max-width:64ch;}
+  p:last-child{margin-bottom:0;}
+
+  /* ---------- Data table ---------- */
+  .table-wrap{overflow-x:auto; border:1px solid var(--line); border-radius:3px;}
+  table{border-collapse:collapse; width:100%; font-size:13.5px; min-width:520px;}
+  thead th{
+    text-align:left;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10.5px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    font-weight:600;
+    padding:10px 14px;
+    background:var(--paper);
+    border-bottom:1px solid var(--line-strong);
+  }
+  tbody td{
+    padding:10px 14px;
+    border-bottom:1px solid var(--line);
+    font-variant-numeric:tabular-nums;
+    vertical-align:top;
+  }
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:nth-child(even){background:color-mix(in srgb, var(--paper) 55%, var(--paper-raised));}
+  .metric-name{font-weight:500; white-space:nowrap;}
+  .fig{font-family:'IBM Plex Mono', monospace;}
+  .sig{
+    display:inline-flex; align-items:center; gap:5px;
+    font-size:12px; font-weight:600; white-space:nowrap;
+  }
+  .sig.good{color:var(--up);}
+  .sig.bad{color:var(--down);}
+  .sig.mixed{color:var(--stamp);}
+  .dot{width:7px; height:7px; border-radius:50%; background:currentColor; flex:none;}
+
+  /* ---------- Pull callout ---------- */
+  .callout{
+    background:var(--accent-soft);
+    border:1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    border-radius:3px;
+    padding:16px 18px;
+    font-size:14px;
+    color:var(--accent-ink);
+    margin:14px 0;
+  }
+  .callout strong{font-weight:700;}
+
+  /* ---------- Numbered list (real sequence: research steps) ---------- */
+  .steps{list-style:none; margin:0; padding:0; counter-reset:step;}
+  .steps li{
+    counter-increment:step;
+    display:grid;
+    grid-template-columns:28px 1fr;
+    gap:12px;
+    padding:12px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .steps li:last-child{border-bottom:none;}
+  .steps li::before{
+    content:counter(step);
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:600;
+    font-size:13px;
+    color:var(--accent);
+    background:var(--accent-soft);
+    width:26px; height:26px;
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .step-body b{display:block; font-weight:600; margin-bottom:2px;}
+  .step-body span{color:var(--ink-soft); font-size:13.5px;}
+
+  /* ---------- Two-col risk/case ---------- */
+  .split{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
+  @media (max-width:600px){.split{grid-template-columns:1fr;}}
+  .card{
+    background:var(--paper-raised);
+    border:1px solid var(--line);
+    border-radius:3px;
+    padding:16px 18px;
+  }
+  .card h3{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    margin:0 0 10px;
+    display:flex; align-items:center; gap:6px;
+  }
+  .card.bull h3{color:var(--up);}
+  .card.bear h3{color:var(--down);}
+  .card ul{margin:0; padding-left:18px; font-size:13.5px; color:var(--ink-soft);}
+  .card li{margin-bottom:7px;}
+  .card li:last-child{margin-bottom:0;}
+
+  /* ---------- Invalidation strip ---------- */
+  .invalid{
+    background:var(--down-soft);
+    border:1px solid color-mix(in srgb, var(--down) 30%, transparent);
+    border-radius:3px;
+    padding:16px 18px;
+  }
+  .invalid p{color:color-mix(in srgb, var(--down) 60%, var(--ink)); margin:0;}
+
+  footer{
+    margin-top:44px;
+    padding-top:18px;
+    border-top:1px solid var(--line);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--ink-faint);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+
+  a{color:var(--accent-ink);}
+</style>
+</head>
+<body>
+
+<div class="sheet">
+
+  <div class="letterhead">
+    <div class="letterhead-left">
+      <div class="kicker">NSE Multibagger Screen &middot; Single-Name Action Memo</div>
+      <div class="doc-title">Jindal Drilling &amp; Industries</div>
+    </div>
+    <div class="letterhead-right">
+      NSE&nbsp;JINDRILL<br>
+      Offshore Drilling Services
+    </div>
+  </div>
+  <div class="meta-row">
+    <span>Prepared 2 Sept 2026</span>
+    <span>Selected from a 28-name screen</span>
+  </div>
+
+  <div class="verdict">
+    <div class="verdict-score">68<span>/100</span></div>
+    <div class="verdict-text">
+      <div class="label">Watchlist &mdash; Verify Before Sizing</div>
+      <div class="action">Best risk-adjusted setup in the screen</div>
+      <div class="sub">Strongest financial trajectory of 28 names, but conviction is capped by one unverified fact: what's actually driving the margin.</div>
+    </div>
+  </div>
+
+  <section>
+    <h2><span class="n">01</span> Why this one</h2>
+    <p>Of the 28 companies screened, Jindal Drilling is the only one showing the full positive pattern at once &mdash; revenue up, margins up, cash flow up, debt down &mdash; sustained across five years rather than one lucky quarter. It's also priced like nobody has noticed: 9.6&times; trailing earnings and 3.5&times; EV/EBITDA, versus a business whose operating margin nearly tripled.</p>
+    <p>That combination is rare enough in this basket to be the one name worth acting on. Everything else in the screen was either financially strong with a fatal flaw (Sandesh's core business shrinking, Dalmia's returns stuck near 7%) or thinly documented enough to just be a guess.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> The five-year record</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Metric</th><th>FY22</th><th>FY26</th><th>Signal</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="metric-name">Revenue</td>
+            <td class="fig">&#8377;420 Cr</td>
+            <td class="fig">&#8377;997 Cr</td>
+            <td><span class="sig good"><span class="dot"></span>+24% CAGR</span></td>
+          </tr>
+          <tr>
+            <td class="metric-name">EBITDA margin</td>
+            <td class="fig">11%</td>
+            <td class="fig">35%</td>
+            <td><span class="sig good"><span class="dot"></span>Structural expansion</span></td>
+          </tr>
+          <tr>
+            <td class="metric-name">Net debt</td>
+            <td class="fig">&#8377;330 Cr</td>
+            <td class="fig">&#8377;93 Cr</td>
+            <td><span class="sig good"><span class="dot"></span>72% reduction</span></td>
+          </tr>
+          <tr>
+            <td class="metric-name">Working capital cycle</td>
+            <td class="fig">positive</td>
+            <td class="fig">&minus;101 days</td>
+            <td><span class="sig good"><span class="dot"></span>Cash-generative</span></td>
+          </tr>
+          <tr>
+            <td class="metric-name">Trailing P/E</td>
+            <td class="fig">&mdash;</td>
+            <td class="fig">9.6&times;</td>
+            <td><span class="sig mixed"><span class="dot"></span>Cheap if durable</span></td>
+          </tr>
+          <tr>
+            <td class="metric-name">Return on equity</td>
+            <td class="fig">&mdash;</td>
+            <td class="fig">~10%</td>
+            <td><span class="sig mixed"><span class="dot"></span>Lags the margin story</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> The one thing that has to check out</h2>
+    <div class="callout">
+      <strong>36&ndash;61% of reported profit in most years has come from "other income"</strong> &mdash; treasury and interest income sitting on the balance sheet, not day-rate revenue from drilling. In the December&nbsp;2025 quarter, other income swung negative and the company posted an outright loss despite the operating business apparently being intact.
+    </div>
+    <p>That's not disqualifying &mdash; a debt-free driller sitting on cash will always show some of this &mdash; but it means the 9.6&times; P/E is not obviously cheap until you know how much of the &#8377;216 Cr FY25 profit was rig operations versus interest on the cash pile. No rig count, day-rate, utilization %, or contract-expiry data was available in this pass. That is the actual gap between a screen and a position.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> What to verify before sizing a position</h2>
+    <ol class="steps">
+      <li>
+        <div class="step-body">
+          <b>Pull the Q1&ndash;Q2 FY27 concall transcript directly</b>
+          <span>jindaldrilling.com or the BSE filings archive &mdash; not aggregator summaries. This wasn't accessible during the screen; it's the single highest-value next step.</span>
+        </div>
+      </li>
+      <li>
+        <div class="step-body">
+          <b>Separate operating profit from other income, quarter by quarter</b>
+          <span>Rebuild EBITDA and PAT excluding treasury/interest income for the last 8 quarters. If the margin story survives that cut, the thesis holds.</span>
+        </div>
+      </li>
+      <li>
+        <div class="step-body">
+          <b>Get the rig fleet detail</b>
+          <span>Number of rigs, current utilization, day-rates being realized, and contract expiry dates &mdash; ideally against ONGC or whichever charterer is the counterparty. Single-customer concentration is common and unquantified here.</span>
+        </div>
+      </li>
+      <li>
+        <div class="step-body">
+          <b>Explain the December 2025 loss quarter directly from the filing</b>
+          <span>Confirm it was other-income volatility, not a one-off operating problem, before treating it as noise.</span>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span> Case for and against</h2>
+    <div class="split">
+      <div class="card bull">
+        <h3>Supports the thesis</h3>
+        <ul>
+          <li>Margin expansion (11%&rarr;35%) has held for five years, not one cycle</li>
+          <li>Debt cut by nearly three quarters while growing revenue</li>
+          <li>Negative working-capital days &mdash; the business is self-funding</li>
+          <li>No share dilution in the period; EPS growth is genuine</li>
+          <li>Cheapest valuation of any name in the top five of the screen</li>
+        </ul>
+      </div>
+      <div class="card bear">
+        <h3>Works against it</h3>
+        <ul>
+          <li>Large, unexplained swings in non-operating income drive PAT</li>
+          <li>ROE (~10%) is unremarkable despite the margin story</li>
+          <li>Zero visibility into rig contracts, the actual demand driver</li>
+          <li>Offshore drilling is a capex-cycle business &mdash; day-rates can reverse</li>
+          <li>Thin analyst coverage; concall access was the failure point twice</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">06</span> What would kill this thesis</h2>
+    <div class="invalid">
+      <p>If the concall confirms operating EBITDA margin is materially below the 35% headline once treasury income is stripped out &mdash; or if rig utilization is concentrated in one contract expiring within 12 months &mdash; this drops out of consideration entirely. A repeat of a negative-other-income quarter without a clear explanation would also be a reason to walk away rather than average in.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>Screening exercise, not investment advice &middot; no return is implied or guaranteed</span>
+    <span>Source: screener.in, company filings &middot; verify before acting</span>
+  </footer>
+
+</div>
+</body>
+</html>
